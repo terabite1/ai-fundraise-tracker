@@ -1,0 +1,54 @@
+name: AI Fundraise Tracker — Ingest & Publish
+
+on:
+  schedule:
+    # Runs at 6 AM and 6 PM UTC every day
+    - cron: "0 6,18 * * *"
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  ingest-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run ingestion pipeline
+        env:
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python scripts/ingest.py
+
+      - name: Export deals to JSON
+        env:
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          OUTPUT_PATH: docs/deals.json
+        run: python scripts/export_json.py
+
+      - name: Commit and push deals.json
+        run: |
+          git config user.name "AI Fundraise Bot"
+          git config user.email "bot@aifundraise.dev"
+          git add docs/deals.json
+          # Only commit if there are changes
+          git diff --staged --quiet || {
+            git commit -m "Update deals.json — $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          }

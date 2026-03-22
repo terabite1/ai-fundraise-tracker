@@ -1,0 +1,61 @@
+{
+  "last_updated": "2025-03-22T12:00:00Z",
+  "total_deals": 5,
+  "deals": [
+    {
+      "company": "Sample AI Corp",
+      "desc": "This is sample data — run the pipeline to populate real deals",
+      "category": "Foundation Models",
+      "round": "Series B",
+      "amount": 200,
+      "valuation": 1500,
+      "investors": ["Example Ventures", "Demo Capital"],
+      "date": "2025-03-20",
+      "source_url": ""
+    },
+    {
+      "company": "AgentStack",
+      "desc": "Sample — AI agent orchestration platform",
+      "category": "AI Agents",
+      "round": "Series A",
+      "amount": 45,
+      "valuation": 300,
+      "investors": ["Sequoia Capital", "Accel"],
+      "date": "2025-03-18",
+      "source_url": ""
+    },
+    {
+      "company": "DataForge AI",
+      "desc": "Sample — AI data infrastructure",
+      "category": "Data Infra",
+      "round": "Seed",
+      "amount": 12,
+      "valuation": 60,
+      "investors": ["YC", "Soma Capital"],
+      "date": "2025-03-15",
+      "source_url": ""
+    },
+    {
+      "company": "PixelMind",
+      "desc": "Sample — Creative AI for video production",
+      "category": "Creative AI",
+      "round": "Series A",
+      "amount": 80,
+      "valuation": 500,
+      "investors": ["a16z", "Lightspeed"],
+      "date": "2025-03-12",
+      "source_url": ""
+    },
+    {
+      "company": "LegalLM",
+      "desc": "Sample — LLM for contract analysis",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 8,
+      "valuation": 40,
+      "investors": ["Khosla Ventures"],
+      "date": "2025-03-10",
+      "source_url": ""
+    }
+  ]
+}

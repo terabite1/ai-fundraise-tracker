@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Fundraise — Live AI Startup Funding Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #09090b;
+    --surface: #111114;
+    --surface-2: #18181b;
+    --border: #27272a;
+    --border-hover: #3f3f46;
+    --text: #fafafa;
+    --text-muted: #a1a1aa;
+    --text-dim: #71717a;
+    --accent: #22d3ee;
+    --accent-dim: rgba(34,211,238,0.1);
+    --green: #4ade80;
+    --green-dim: rgba(74,222,128,0.1);
+    --amber: #fbbf24;
+    --amber-dim: rgba(251,191,36,0.1);
+    --rose: #fb7185;
+    --rose-dim: rgba(251,113,133,0.1);
+    --violet: #a78bfa;
+    --violet-dim: rgba(167,139,250,0.1);
+    --blue: #60a5fa;
+    --blue-dim: rgba(96,165,250,0.1);
+    --font-body: 'DM Sans', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+  }
+  .ambient-glow {
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 500px;
+    background: radial-gradient(ellipse, rgba(34,211,238,0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* NAV */
+  nav {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: rgba(9,9,11,0.85);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--accent), #818cf8);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--bg);
+    font-family: var(--font-mono);
+  }
+  .logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.5px;
+  }
+  .logo-text span { color: var(--accent); }
+  .nav-links { display: flex; align-items: center; gap: 8px; }
+  .nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 14px;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  .nav-links a:hover { color: var(--text); background: var(--surface-2); }
+  .nav-links a.active { color: var(--accent); background: var(--accent-dim); }
+  .nav-badge {
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 4px;
+    font-family: var(--font-mono);
+  }
+
+  /* HERO */
+  .hero { padding: 64px 0 40px; text-align: center; }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-family: var(--font-mono);
+  }
+  .hero-badge .pulse {
+    width: 6px; height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 2s ease infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(74,222,128,0.4); }
+    50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(74,222,128,0); }
+  }
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .hero h1 .gradient {
+    background: linear-gradient(135deg, var(--accent), #818cf8, var(--rose));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p {
+    color: var(--text-muted);
+    font-size: 16px;
+    max-width: 520px;
+    margin: 0 auto 12px;
+    line-height: 1.6;
+  }
+  .last-updated {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-bottom: 32px;
+  }
+
+  /* STATS */
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding: 0 0 40px;
+    flex-wrap: wrap;
+  }
+  .stat { text-align: center; }
+  .stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    letter-spacing: -1px;
+  }
+  .stat-value.cyan { color: var(--accent); }
+  .stat-value.green { color: var(--green); }
+  .stat-value.amber { color: var(--amber); }
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  /* CONTROLS */
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .search-box {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+  }
+  .search-box input {
+    width: 100%;
+    padding: 10px 14px 10px 38px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 13px;
+    font-family: var(--font-body);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-box input:focus { border-color: var(--accent); }
+  .search-box input::placeholder { color: var(--text-dim); }
+  .search-box svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-dim);
+  }
+  .filter-btn {
+    padding: 10px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: var(--font-body);
+    white-space: nowrap;
+  }
+  .filter-btn:hover { border-color: var(--border-hover); color: var(--text); }
+  .filter-btn.active { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
+
+  /* TABLE */
+  .table-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; min-width: 900px; }
+  thead { background: var(--surface-2); }
+  th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+  th:hover { color: var(--text-muted); }
+  th .sort-arrow { margin-left: 4px; font-size: 10px; opacity: 0.5; }
+  th.sorted .sort-arrow { opacity: 1; color: var(--accent); }
+  tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+  tbody tr:hover { background: rgba(34,211,238,0.02); }
+  tbody tr:last-child { border-bottom: none; }
+  td { padding: 14px 16px; font-size: 13px; color: var(--text-muted); vertical-align: middle; }
+
+  .company-cell { display: flex; align-items: center; gap: 12px; }
+  .company-logo {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    flex-shrink: 0;
+    font-family: var(--font-mono);
+  }
+  .company-name { font-weight: 600; color: var(--text); font-size: 14px; line-height: 1.3; }
+  .company-desc {
+    font-size: 12px; color: var(--text-dim); line-height: 1.3;
+    max-width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  .round-badge {
+    display: inline-block; padding: 4px 10px; border-radius: 6px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.3px; font-family: var(--font-mono);
+  }
+  .round-seed { background: var(--green-dim); color: var(--green); }
+  .round-a { background: var(--blue-dim); color: var(--blue); }
+  .round-b { background: var(--violet-dim); color: var(--violet); }
+  .round-c { background: var(--amber-dim); color: var(--amber); }
+  .round-d { background: var(--rose-dim); color: var(--rose); }
+  .round-pre { background: rgba(161,161,170,0.1); color: var(--text-muted); }
+
+  .amount { font-family: var(--font-mono); font-weight: 600; color: var(--text); font-size: 13px; }
+  .valuation { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); }
+
+  .investor-tags { display: flex; gap: 4px; flex-wrap: wrap; }
+  .investor-tag {
+    padding: 3px 8px; background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 5px; font-size: 11px; color: var(--text-muted); white-space: nowrap;
+  }
+  .investor-more {
+    padding: 3px 8px; background: var(--accent-dim); border: 1px solid transparent;
+    border-radius: 5px; font-size: 11px; color: var(--accent); font-weight: 600; cursor: pointer;
+  }
+
+  .date-cell { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); white-space: nowrap; }
+
+  .category-tag { padding: 3px 8px; border-radius: 5px; font-size: 11px; font-weight: 500; white-space: nowrap; }
+
+  /* LOADING */
+  .loading-state {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--text-dim);
+  }
+  .loading-state .spinner {
+    width: 32px; height: 32px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* PAGINATION */
+  .pagination {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 20px; border-top: 1px solid var(--border);
+  }
+  .page-info { font-size: 13px; color: var(--text-dim); }
+  .page-buttons { display: flex; gap: 6px; }
+  .page-btn {
+    padding: 6px 12px; background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 6px; color: var(--text-muted); font-size: 12px; cursor: pointer;
+    transition: all 0.2s; font-family: var(--font-body);
+  }
+  .page-btn:hover { border-color: var(--border-hover); color: var(--text); }
+  .page-btn.active { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
+  .page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+  /* FOOTER */
+  footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
+  .footer-text { font-size: 12px; color: var(--text-dim); }
+  .footer-text a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 768px) {
+    .nav-links a:not(.active) { display: none; }
+    .stats-row { gap: 24px; }
+    .controls { flex-direction: column; }
+    .search-box { min-width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="ambient-glow"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">Δ</div>
+      <div class="logo-text">AI<span>Fundraise</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="#" class="active">Deals <span class="nav-badge">LIVE</span></a>
+      <a href="#">Analytics</a>
+      <a href="#">Investors</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="hero">
+    <div class="hero-badge"><div class="pulse"></div> Updated every 12h</div>
+    <h1>Track every <span class="gradient">AI funding</span> round</h1>
+    <p>Real-time tracker of venture capital deals across the AI ecosystem. Sourced, verified, and updated twice daily.</p>
+    <div class="last-updated" id="lastUpdated"></div>
+  </div>
+
+  <div class="stats-row" id="statsRow"></div>
+
+  <div class="controls">
+    <div class="search-box">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Search company, investor, category…">
+    </div>
+    <button class="filter-btn active" data-round="all">All Rounds</button>
+    <button class="filter-btn" data-round="Pre-Seed">Pre-Seed</button>
+    <button class="filter-btn" data-round="Seed">Seed</button>
+    <button class="filter-btn" data-round="Series A">Series A</button>
+    <button class="filter-btn" data-round="Series B">Series B</button>
+    <button class="filter-btn" data-round="Series C+">Series C+</button>
+  </div>
+
+  <div class="table-wrap">
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="company">Company <span class="sort-arrow">↕</span></th>
+            <th data-sort="category">Category <span class="sort-arrow">↕</span></th>
+            <th data-sort="round">Round <span class="sort-arrow">↕</span></th>
+            <th data-sort="amount">Amount <span class="sort-arrow">↕</span></th>
+            <th data-sort="valuation">Valuation <span class="sort-arrow">↕</span></th>
+            <th>Lead Investors</th>
+            <th data-sort="date">Date <span class="sort-arrow">↕</span></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr><td colspan="7">
+            <div class="loading-state">
+              <div class="spinner"></div>
+              Loading deals…
+            </div>
+          </td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination" id="pagination"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p class="footer-text">Built with care · Data refreshes every 12 hours · <a href="#">Submit a deal</a></p>
+  </div>
+</footer>
+
+<script>
+// ══════════════════════════════════════════════════════════════
+//  CONFIG — Change this URL to your hosted deals.json
+// ══════════════════════════════════════════════════════════════
+const DEALS_JSON_URL = "./deals.json";
+
+let DEALS = [];
+let state = { search: '', round: 'all', sortKey: 'date', sortDir: 'desc', page: 1, perPage: 15 };
+
+// ── Fetch deals ──
+async function loadDeals() {
+  try {
+    const resp = await fetch(DEALS_JSON_URL);
+    const data = await resp.json();
+    DEALS = data.deals || [];
+    if (data.last_updated) {
+      const d = new Date(data.last_updated);
+      document.getElementById('lastUpdated').textContent = `Last updated: ${d.toLocaleString()}`;
+    }
+    renderStats();
+    renderTable();
+  } catch (err) {
+    console.error("Failed to load deals:", err);
+    document.getElementById('tableBody').innerHTML = `<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--text-dim)">
+      Failed to load deals. Make sure deals.json is accessible.
+    </td></tr>`;
+  }
+}
+
+function getRoundClass(round) {
+  if (!round) return 'round-pre';
+  if (round.includes('Pre')) return 'round-pre';
+  if (round === 'Seed') return 'round-seed';
+  if (round.includes('A')) return 'round-a';
+  if (round.includes('B')) return 'round-b';
+  if (round.includes('C')) return 'round-c';
+  return 'round-d';
+}
+
+function getCategoryColor(cat) {
+  const map = {
+    'Foundation Models': { bg: 'var(--violet-dim)', color: 'var(--violet)' },
+    'AI Agents': { bg: 'var(--accent-dim)', color: 'var(--accent)' },
+    'Developer Tools': { bg: 'var(--green-dim)', color: 'var(--green)' },
+    'Enterprise AI': { bg: 'var(--blue-dim)', color: 'var(--blue)' },
+    'Vertical AI': { bg: 'var(--rose-dim)', color: 'var(--rose)' },
+    'Creative AI': { bg: 'var(--amber-dim)', color: 'var(--amber)' },
+    'MLOps': { bg: 'rgba(161,161,170,0.1)', color: 'var(--text-muted)' },
+    'Data Infra': { bg: 'rgba(74,222,128,0.08)', color: '#86efac' },
+    'AI Infra': { bg: 'rgba(96,165,250,0.08)', color: '#93c5fd' },
+    'Robotics': { bg: 'var(--rose-dim)', color: 'var(--rose)' },
+  };
+  return map[cat] || { bg: 'var(--surface-2)', color: 'var(--text-muted)' };
+}
+
+function formatAmount(m) {
+  if (m == null) return '—';
+  if (m >= 1000) return `$${(m / 1000).toFixed(1)}B`;
+  return `$${m}M`;
+}
+
+function normalizeRound(r) {
+  if (!r) return '';
+  if (r.includes('Pre')) return 'Pre-Seed';
+  if (r === 'Seed') return 'Seed';
+  if (r.includes(' A')) return 'Series A';
+  if (r.includes(' B')) return 'Series B';
+  return 'Series C+';
+}
+
+function filterAndSort() {
+  let data = [...DEALS];
+  if (state.search) {
+    const q = state.search.toLowerCase();
+    data = data.filter(d =>
+      (d.company || '').toLowerCase().includes(q) ||
+      (d.desc || '').toLowerCase().includes(q) ||
+      (d.category || '').toLowerCase().includes(q) ||
+      (d.investors || []).some(i => i.toLowerCase().includes(q))
+    );
+  }
+  if (state.round !== 'all') {
+    data = data.filter(d => normalizeRound(d.round) === state.round);
+  }
+  data.sort((a, b) => {
+    let va, vb;
+    switch (state.sortKey) {
+      case 'company': va = a.company || ''; vb = b.company || ''; break;
+      case 'category': va = a.category || ''; vb = b.category || ''; break;
+      case 'round': va = a.round || ''; vb = b.round || ''; break;
+      case 'amount': va = a.amount || 0; vb = b.amount || 0; break;
+      case 'valuation': va = a.valuation || 0; vb = b.valuation || 0; break;
+      case 'date': va = a.date || ''; vb = b.date || ''; break;
+      default: va = a.date || ''; vb = b.date || '';
+    }
+    if (typeof va === 'string') return state.sortDir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+    return state.sortDir === 'asc' ? va - vb : vb - va;
+  });
+  return data;
+}
+
+function renderStats() {
+  const totalRaised = DEALS.reduce((s, d) => s + (d.amount || 0), 0);
+  const totalDeals = DEALS.length;
+  const avgRound = totalDeals ? Math.round(totalRaised / totalDeals) : 0;
+  document.getElementById('statsRow').innerHTML = `
+    <div class="stat"><div class="stat-value cyan">${formatAmount(totalRaised)}</div><div class="stat-label">Total Raised</div></div>
+    <div class="stat"><div class="stat-value green">${totalDeals}</div><div class="stat-label">Deals Tracked</div></div>
+    <div class="stat"><div class="stat-value amber">${formatAmount(avgRound)}</div><div class="stat-label">Avg Round Size</div></div>
+  `;
+}
+
+function renderTable() {
+  const data = filterAndSort();
+  const totalPages = Math.max(1, Math.ceil(data.length / state.perPage));
+  if (state.page > totalPages) state.page = totalPages;
+  const start = (state.page - 1) * state.perPage;
+  const pageData = data.slice(start, start + state.perPage);
+
+  const tbody = document.getElementById('tableBody');
+  if (pageData.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--text-dim)">No deals found matching your filters.</td></tr>`;
+  } else {
+    tbody.innerHTML = pageData.map(d => {
+      const catColor = getCategoryColor(d.category);
+      const investors = d.investors || [];
+      const showInvestors = investors.slice(0, 2);
+      const moreCount = investors.length - 2;
+      const dateStr = d.date ? new Date(d.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
+      return `<tr>
+        <td>
+          <div class="company-cell">
+            <div class="company-logo">${(d.company || '?')[0]}</div>
+            <div>
+              <div class="company-name">${d.company || 'Unknown'}</div>
+              <div class="company-desc">${d.desc || ''}</div>
+            </div>
+          </div>
+        </td>
+        <td><span class="category-tag" style="background:${catColor.bg};color:${catColor.color}">${d.category || '—'}</span></td>
+        <td><span class="round-badge ${getRoundClass(d.round)}">${d.round || '—'}</span></td>
+        <td><span class="amount">${formatAmount(d.amount)}</span></td>
+        <td><span class="valuation">${formatAmount(d.valuation)}</span></td>
+        <td>
+          <div class="investor-tags">
+            ${showInvestors.map(i => `<span class="investor-tag">${i}</span>`).join('')}
+            ${moreCount > 0 ? `<span class="investor-more">+${moreCount}</span>` : ''}
+          </div>
+        </td>
+        <td><span class="date-cell">${dateStr}</span></td>
+      </tr>`;
+    }).join('');
+  }
+
+  const pag = document.getElementById('pagination');
+  pag.innerHTML = `
+    <span class="page-info">Showing ${data.length ? start + 1 : 0}–${Math.min(start + state.perPage, data.length)} of ${data.length} deals</span>
+    <div class="page-buttons">
+      <button class="page-btn" onclick="goPage(${state.page - 1})" ${state.page === 1 ? 'disabled' : ''}>← Prev</button>
+      ${Array.from({ length: Math.min(totalPages, 7) }, (_, i) => `<button class="page-btn ${state.page === i + 1 ? 'active' : ''}" onclick="goPage(${i + 1})">${i + 1}</button>`).join('')}
+      ${totalPages > 7 ? `<span style="color:var(--text-dim);padding:0 4px">…</span>` : ''}
+      <button class="page-btn" onclick="goPage(${state.page + 1})" ${state.page === totalPages ? 'disabled' : ''}>Next →</button>
+    </div>
+  `;
+
+  document.querySelectorAll('th').forEach(th => {
+    th.classList.toggle('sorted', th.dataset.sort === state.sortKey);
+    const arrow = th.querySelector('.sort-arrow');
+    if (arrow && th.dataset.sort === state.sortKey) arrow.textContent = state.sortDir === 'asc' ? '↑' : '↓';
+    else if (arrow) arrow.textContent = '↕';
+  });
+}
+
+function goPage(p) { state.page = p; renderTable(); }
+
+document.getElementById('searchInput').addEventListener('input', e => {
+  state.search = e.target.value; state.page = 1; renderTable();
+});
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    state.round = btn.dataset.round;
+    state.page = 1;
+    renderTable();
+  });
+});
+
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.addEventListener('click', () => {
+    const key = th.dataset.sort;
+    if (state.sortKey === key) state.sortDir = state.sortDir === 'asc' ? 'desc' : 'asc';
+    else { state.sortKey = key; state.sortDir = key === 'date' || key === 'amount' || key === 'valuation' ? 'desc' : 'asc'; }
+    state.page = 1;
+    renderTable();
+  });
+});
+
+// Boot
+loadDeals();
+</script>
+</body>
+</html>
