@@ -1,59 +1,323 @@
 {
-  "last_updated": "2025-03-22T12:00:00Z",
-  "total_deals": 5,
+  "last_updated": "2026-03-22T14:10:59Z",
+  "total_deals": 27,
   "deals": [
     {
+      "company": "Cursor",
+      "desc": "AI-powered code editor that accelerates software development",
+      "category": "Developer Tools",
+      "round": null,
+      "amount": null,
+      "valuation": 50000,
+      "investors": [],
+      "date": "2026-03-22",
+      "source_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQbWtoMFg3WVByUkhKbjhWaW4zVzRzUW92ZjRkb1VjalFFTW4ySnV5WEZKSHEwUy11T1Nnc2pycUxzQVdCZGt4ZUdtRUpCeHhqby1PMFE0aHVPY3hZMHJKNDdNVm1MX3JSbGs2cXRRd28zVkhkMzBNMDlNTTdpM2VFTFhqUWc3MV9EUnhwVXdQdlhIWjZBSGxTUS1FeDItVmlNZmM4YkxfbVJ2cldfRUlZVzNQR1ZyUkFPYjJWdGlCV2s2WnA5TXJUaDR6QWtWekxhNlhxS05zcWFlMjRDYkFoWE5BMTdXeHFuSy1UR3F3N29UdXc1TE9yV3NXWTgxUQ?oc=5"
+    },
+    {
+      "company": "Halter",
+      "desc": "AI-powered smart collars for cattle management",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": null,
+      "valuation": 2000,
+      "investors": [
+        "Founders Fund"
+      ],
+      "date": "2026-03-22",
+      "source_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPckNVSFpONzhKZlphcVJac25HQWNXOHlfYVdFSDhZQTVzY29ESHNCU25XWERjSnNWNG9aWWkzZEduR25FejhKZEtJZFZqRmZRU2MyT0dRenJfSkFGck9wWDhnMXlBTEdvQ1J3QTVVVkJHTDUtYmc1Ni0yN3hNYzFTbWVjeEJHZU1nR0tXbjFLUFpGNWt3VjRkbndnY0R6U1VMS0ZZWF83VGpNRFhfR3Bzbi1RWDBmWWJhWmFEcFVMNGZjQ2o0a1VRZlBibHN3ZnJfZ2Q1NnZKYmIzNE1ld01Odjh3YjA0a20tT2J3SVNhZlFKZXhx?oc=5"
+    },
+    {
+      "company": "OpusClip",
+      "desc": "AI video startup",
+      "category": "Creative AI",
+      "round": "Series A",
+      "amount": 20,
+      "valuation": 215,
+      "investors": [
+        "SoftBank Vision Fund 2"
+      ],
+      "date": "2026-03-21",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSFBlQkp2eTZZTG5OVXhoMmlxQkpYV1pTZDA0aHVCY2trdkIyUFNXSFVFMmRwclNlclBKRTlBTmNpYy1qVE5KZnZYVnMtdU85clhXeEFvWC1NLUE3MTV3Tl9BOHJKODRfTUJJaXN1ZkdkM3RScGYwU0ZkWWJaOWNwQ3JMOW9xTTdyR3FBWVp2cw?oc=5"
+    },
+    {
+      "company": "Oasis Security",
+      "desc": "Secures enterprise AI agents",
+      "category": "Enterprise AI",
+      "round": "Series B",
+      "amount": 120,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-21",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1LdHVTZXVhX3YtblpZQ0gtYVVhMHBXb2JScS0zWkNSeXlCcVBkTXVXZGZOUWVVTW45eDlTc1o0R1o4bnBCVk8zU19tdHdqVjVZc1h6TE1wZXNTdWJJTHNEc1dn?oc=5"
+    },
+    {
+      "company": "Manifold",
+      "desc": "Secures autonomous endpoint AI agents at runtime",
+      "category": "AI Infra",
+      "round": "Seed",
+      "amount": 8,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-21",
+      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSkR3bFRYWHN4QUhmSmZmemdaUmlEU25aUmFUUTdOa0VsSW44X2xoYU9YNFNwWVI1bE4tRlhSS205T2dYaHcwR3d0VUFRajRNYmdRdUttYVFLNDd2dFBTMXgtS3lvT1RnSkNmSXlzYV81b05RbE9fa2FpRUt5cUc2TGFoYzBwUlJOeHVKblBYTUFyZnh1aFFuUjZBR0ZZWTRPSGNlZmhXZUQ3VXBCMTA5U1o2SzRjb05MMllBTmlobjlXMk4ybG1Zcg?oc=5"
+    },
+    {
+      "company": "Edra",
+      "desc": "AI-powered SaaS platform",
+      "category": "Enterprise AI",
+      "round": "Series A",
+      "amount": 30,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-20",
+      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5xMWJyMnlNRmF0bk1iUThjSzR0Zy1FamVnQWdmdXUzZkk1dlhpLUV0STFiaEFCTkJOa3M5dmlSMDJaWU8zUS0zckhJckZ6RU5OM3VUMWVEX1VNN0h4bTBIampzdFV5V0NoR0Q1dm96allZdw?oc=5"
+    },
+    {
+      "company": "Deeptune",
+      "desc": "AI simulation platform",
+      "category": "AI Infra",
+      "round": "Series A",
+      "amount": 43,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-20",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeVVURjVfMkcta19LZTIzZGxybUhVNlREbHMtcWktSzZZWHlOczhMbVU4Zl9sbVNNcUlLZzNnNFN0MDBkMU43VHFqTDVlU2JWazFyNFJ0dFNZdmZ4VjJ2TFZ2UjNHb3VhcmctWjBQTFFoVU5uWWVWclpLcVh4M0ZBX3czTHJvNnY0bFgyRDlvamFpWkFaWHMzSNIBngFBVV95cUxNaWc1Y251dmQtMmF5MUVVVmVCRnZPNldvMmVGakU0RzRzbTk4eFpORG1BbnRGVEtiZS1tSGtjZE5Tdy1oTnhPQ0lmdjRmdjFUenNUZHZaZWxnbGRuOWxKUmNvQTFtQ2psRUVkTEJLUTVQbktHdDVBS3lYaDI2SnREdGxIMnJJdE1MQWJDb0dVZTFJbGY0ZDQwN09tVTlNQQ?oc=5"
+    },
+    {
+      "company": "PADO AI",
+      "desc": "AI-powered SaaS platform",
+      "category": "Enterprise AI",
+      "round": "Seed",
+      "amount": 6,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-20",
+      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBYcl9hYUNFY2ZZaUtEQVJxWFRKbUd2MVM3eXM5QjhvZ1NUT3VIN1pSamdFT2VpUk1DbmtZWlF2RDhRM3dtWXJ3ZGV4OG9fNjl5RHBpd3RCbVIzVFJqSVppSGI4UWlGU1VITlRGbEFvcy1uNldCd3dN?oc=5"
+    },
+    {
+      "company": "Profound",
+      "desc": "Helps brands stay visible as AI threatens traditional search",
+      "category": "Enterprise AI",
+      "round": null,
+      "amount": 96,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-20",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVFNVaklpeXluOFM1endZUFBlZjYyODJCeU8yVE9Hald2MDFiNEtTZ05majN1YWtBQkxEV01aNkZucHg4dG5vQkVhZEt3MTJ1UlRsTjhmTGZ1NEpZaVBIMDRydF9mUWVkbVc3XzFMNUtrTWYtOG1YTnZfMktQNUpGRjlJNnJ2ODBuRlZoUDNZejVETTJnazJVVGY0OHNRbXFYNHJJ?oc=5"
+    },
+    {
+      "company": "MatX",
+      "desc": "AI chip startup building hardware to compete with Nvidia",
+      "category": "AI Infra",
+      "round": null,
+      "amount": 500,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-20",
+      "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUkRrQ19RUUNpbzlvcU1hQ3pxV2FQOU9rMHN1QUJfX1pxR2c1V1gwOWxHRTNEdWpUQnBPSGlzQkdCX2VobGRxVWZDQ0FmZDV2Q1VfMmlZcnI1UlBfeXdLZWQ1R214eDN0TFNIaVlyX0tDLW5kS3NvUFFSVkZ6bk9famN6aGIwWV9rZDE3enppLWljMU5teGZrQ3oyNk5HUWZ5Mkd2Rk9tRUNIMHpZRDZQaXRUc2p6X1M2QXktVEloUlJLS256aWpEUFlablRqbU5zUlpiYkRkX3NGRW5zLTZFU05R?oc=5"
+    },
+    {
+      "company": "Paraform",
+      "desc": "AI infrastructure platform expanding its reach",
+      "category": "AI Infra",
+      "round": null,
+      "amount": 40,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-20",
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWUNnWkpxVmhWWFd0MjZXU1FIQlFRNlowWXlyNmRGMTBOVEo4V3RGdDFhUXNaby15TVRnZjFMWUdMbTVNdGhqYXZfOU1tRGNacE1wXzJIN19WYWtDUUN0V2tJRC0taTVLWXJhQm0tdm5JZjRTM2RaUEdzV2ltcGdFOFpvV1_SAYQBQVVfeXFMTVlDZ1pKcVZoVlhXdDI2V1NRSEJRUTZaMFl5cjZkRjEwTlRKOFd0RnQxYVFzWm8teU1UZ2YxTFlHTG01TXRoamF2XzlNbURjWnBNcF8ySDdfVmFrQ1FDdFdrSUQtLWk1S1lyYUJtLXZuSWY0UzNkWlBHc1dpbXBnRThab1df?oc=5"
+    },
+    {
+      "company": "Baseten",
+      "desc": "AI inference infrastructure startup",
+      "category": "AI Infra",
+      "round": null,
+      "amount": null,
+      "valuation": null,
+      "investors": [
+        "Nvidia"
+      ],
+      "date": "2026-03-20",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxPQ2E5MmNFM0ExYVdlU1oyd2Y0Sm42S005UlExOW5nN045dGk0VnZoV0x5YmlxdTdxVHY2TzMzVkI3dTlZNTFaY0VVNTBIQUxsMktlOXNQYnFIWnhySEVWQ2VuNVRJV1RESE4xU1piYlRGSlNRS0lYZWx0a0ticXJUU0pHM21pMXliOWVKU2hEeFVBek01UGxuQk8tNmJkcWJ2c2l6ZWFJdDNYVW94UEN2S0QzZEFpVFpXajlaNW1yM2t1QlBkSlVRRDk3NDUxOS15QXJnZ0ZRaUc5Vnl0RmhmS2VYMUVvY1FfQm5TQXJEdjJxQTBPUGxkbU1DS1NyN3I4X0RyTDN0NURObVgtTUd3REZXNVJuZ3RsOC1OSWc2TjhiNHhrZmc5SWJLMk51ejEwSl91OWEtaDExckkzRTVLSUIyc3hXbl9mbjZlOXJZMFQ2QXV3UXZQV0hZNGZldDJ1a2N6Y1FDbzlTS0pGYldOcjE3eU5DV2l0dk04b2VsOUlrWFBza180Z2cxaw?oc=5"
+    },
+    {
+      "company": "Cloaked",
+      "desc": "Privacy startup offering consumer identity protection and enterprise privacy tools",
+      "category": "Enterprise AI",
+      "round": "Series B",
+      "amount": 375,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLUEzdDVUcTdnNE5NaTRTYTNXSjhwZWpDVGc4RXphRF83SGZyUE94d3hKZVhwbm0tN251Tm0zSlF4aEFzOFlQVW9lbnNmVGlTRUxBSDVESnluU0taMjBQcnl5QXJlSjZfZGk2MUpOcGtuMXdUMThBYjlVWnpjYXVDc21CS1ZMVnVyLURESFRVajdHYkxR?oc=5"
+    },
+    {
+      "company": "Xbow",
+      "desc": "Develops autonomous AI systems for cybersecurity and ethical hacking",
+      "category": "Vertical AI",
+      "round": "Series C",
+      "amount": 120,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdzh2bGlKVkwxUk5oTDJZNks0Sl95N2hQVE9obHdXMFNZSDk0bWo0VElaRFgtWFI5aWF5a3JRVExwNkxqekdHcVRDbXpkZk9YVnFDS1NDY055REdKQVo3VjFuNkU2QVRFa2tXekxkQllKWmtGSG9QRjB3RnV2QUlOV0RyUHo5TmJzaC1RczdneWVrRVNQbm9FT2dHVDNqZw?oc=5"
+    },
+    {
+      "company": "Verily",
+      "desc": "Alphabet\u2019s precision health and AI analytics unit spun out to become an independent data-driven health giant.",
+      "category": "Vertical AI",
+      "round": "Series A",
+      "amount": 300,
+      "valuation": null,
+      "investors": [
+        "Alphabet"
+      ],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZWxiNmZzQWc2bmtjeTZhaTdUaDZQa1JERlZvVEdjZ2FkU1dVRVhhbzh2c05OZHVzYVQtdXhrb21PYWRoZktJNUdqZnpJOGlIcWlqRVpHT0dhYlZIU2ZQV1c3SFJRYzVKQWQ0NlpmTDdQQTl3Wk9kZ2xablk2VTJwWjdOMFJNTHhrdlpmVGYxZ2Jzckg0Y0ZNQmNCQ3BxSkx0LVFwZFJn?oc=5"
+    },
+    {
+      "company": "Obin AI",
+      "desc": "Agentic tools for financial firms",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 7,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR3l6R1otQ2FBVS1DSDVwMVdOY2VaLXQ0cmhxTkM1TVAwaFJzVzN5Ry1qenVTSTRLLWdQMzlYVW1OMFlpenNVYU9GSkEwTlpudzdYYzRmUENMNXhVRFowbzYwYW1YaW1BZG1EaUNfTGJWWTZWYVRnakFWQXQ0T1ZwS1ljYk9Ya2xJT3Q1YjhQOThCclBTNWUzbDViMDBqRVdqR210Nno1Mk9TLUxyekdMa0xxLVdFUQ?oc=5"
+    },
+    {
+      "company": "Foresight",
+      "desc": "AI infrastructure platform for project delivery",
+      "category": "AI Infra",
+      "round": "Series A",
+      "amount": 25,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTDVMemYzeHBueWlCRDNoMlh5SWxlUHAydHJPY3VsRHMwb250UkN6cHRsYW5iaV9NVUo3VlhxZl9fMHhKZ2dIM3ZqZ01zWXl0bUJwVFJiR0puOGVkRl9NaHVzZjU1VG5kdWs4ZGREOFA2QXVZUmdsR1FhQUM4SEc4MG4yTUQ3eUdaMHFac2xrb29oRkdTR0F0N2FGM3RXMEJUc2QwZVVMSS3SAa4BQVVfeXFMTld6YVRyVVdwM09odl9DMUdmUmt4aDQ1azZzVU9iNUVFcGZhd3BxZjZiX1l3VWxoeENPaGNjcmpiZlJuREhIUUZCSG5oQXhGWjRRaWdvWHNwSWxnNmlWT0dvS2RNU1NWbTl1VTYtWncxRWJHZUVaWDJnT3RQbGU3ZVBVT2F1eG5NeW5PUFd5OEhFZUZ3R2lxSFZSdGp1ZkV5N01paGs3V1o2TlM5a3R3?oc=5"
+    },
+    {
+      "company": "Eclypsium",
+      "desc": "Cybersecurity startup securing AI infrastructure",
+      "category": "AI Infra",
+      "round": "Series C",
+      "amount": 25,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPakRaWnZtQzZlVVJybTVaazJwZmk1dG5wOXl2UnJVVnRwQUFVN3R6X280WS1WQzg1YkpxMnUzOE9YQ2VWdW1XeE1oZ2RNeWRsZmx6LS1ueERZUm9waUJjZ1dlUnNMMFE2dFFQLUVZRy1CTldXaElpeE9JVVI1MzByVTJmVS02eU5HOEs0Y09IOWF2QzkyMzRWTDEtR1RhbVpITWdwOHRmQ0ZPRFdVVWln?oc=5"
+    },
+    {
+      "company": "Rhonexum",
+      "desc": "Cryogenic electronics startup",
+      "category": "AI Infra",
+      "round": "Pre-Seed",
+      "amount": 1,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWkxwWTdmZmxrV3lPc1JpMl9kRTR5NkY2cU9ISmFUYmlLMHgtMHJJRzdDc25rcWxOSkFpeHhSaTJDTXUyRlpBM1FEX0NDczZabTJNT0tFX1hXOGhnU3hFWjE3UnRJRGVjMTNWY3dCMGpWQ25aYlR1Rmt3d1h5VmNNVHQtMjctMnJlb2FiUDN6Q0FXalc4NGZwQmVVNXlINkFGbkI5dFk1WWFuR08wSGg4aXdxVkVZSWFtMGc?oc=5"
+    },
+    {
+      "company": "MiAI Law",
+      "desc": "AI-powered legal technology platform",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 2,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOek1JTzZjSnh5a1doSjVyRkZYR1Bfem5VUG90UjNyWEExcjA2b2JjX3I1dEdZQTBWazREN3V5TkV3UjhxV2I3VFRlVjg5NUF2TW1PQjllb2U2cVFTeExvNGFsSXhKRzlYcjIxbjBxVlhkeU16QXlXY1FTRzk3Zi1zeU5sVXdTRjh3MEFuaEdNNlN1R3ZDY0E?oc=5"
+    },
+    {
+      "company": "Claros",
+      "desc": "AI-driven tech to make data centers more energy efficient",
+      "category": "AI Infra",
+      "round": "Series A",
+      "amount": 30,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPamNQQjN6aVM0MUZfQzYyQjMwbFZOQTVzQnZnU3I3MGlXblBEdlYwUFIxam9Mc094RzVESXFSSHE3UVZ4ZDdQR0FDalpXN0cwdHQtb2x0dUxKRV9mLUdGbnVRaHhYTExGVGNzTVF2MmE5S0diVi1GZzgxTUNaVkg5aFhDeW0yT2xM?oc=5"
+    },
+    {
+      "company": "Autoscience",
+      "desc": "Operates an autonomous AI research lab",
+      "category": "AI Infra",
+      "round": "Seed",
+      "amount": 14,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-03-19",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdGh5VUptVnd6X25xQzRNZTJoR0JfUjNPYUxEU2lGUUp5Rm5EbTZ2NC1xNE9fWEhiY2pPYnE4VG1tNnp4SUFHUTVwY0hMenRMSzNEVVNoSHQ0WjYwZFJ2WWVONTRmUG0yM1Z5SUFzS01qUUYyTWRTVWtmZWZjUVkyTEwwQkRpUWZPMlRyZ2NhMEg4REozdXE0VXBjS2llQW1lY2MzalNBYw?oc=5"
+    },
+    {
       "company": "Sample AI Corp",
-      "desc": "This is sample data — run the pipeline to populate real deals",
+      "desc": "This is sample data \u2014 run the pipeline to populate real deals",
       "category": "Foundation Models",
       "round": "Series B",
       "amount": 200,
       "valuation": 1500,
-      "investors": ["Example Ventures", "Demo Capital"],
+      "investors": [
+        "Example Ventures",
+        "Demo Capital"
+      ],
       "date": "2025-03-20",
       "source_url": ""
     },
     {
       "company": "AgentStack",
-      "desc": "Sample — AI agent orchestration platform",
+      "desc": "Sample \u2014 AI agent orchestration platform",
       "category": "AI Agents",
       "round": "Series A",
       "amount": 45,
       "valuation": 300,
-      "investors": ["Sequoia Capital", "Accel"],
+      "investors": [
+        "Sequoia Capital",
+        "Accel"
+      ],
       "date": "2025-03-18",
       "source_url": ""
     },
     {
       "company": "DataForge AI",
-      "desc": "Sample — AI data infrastructure",
+      "desc": "Sample \u2014 AI data infrastructure",
       "category": "Data Infra",
       "round": "Seed",
       "amount": 12,
       "valuation": 60,
-      "investors": ["YC", "Soma Capital"],
+      "investors": [
+        "YC",
+        "Soma Capital"
+      ],
       "date": "2025-03-15",
       "source_url": ""
     },
     {
       "company": "PixelMind",
-      "desc": "Sample — Creative AI for video production",
+      "desc": "Sample \u2014 Creative AI for video production",
       "category": "Creative AI",
       "round": "Series A",
       "amount": 80,
       "valuation": 500,
-      "investors": ["a16z", "Lightspeed"],
+      "investors": [
+        "a16z",
+        "Lightspeed"
+      ],
       "date": "2025-03-12",
       "source_url": ""
     },
     {
       "company": "LegalLM",
-      "desc": "Sample — LLM for contract analysis",
+      "desc": "Sample \u2014 LLM for contract analysis",
       "category": "Vertical AI",
       "round": "Seed",
       "amount": 8,
       "valuation": 40,
-      "investors": ["Khosla Ventures"],
+      "investors": [
+        "Khosla Ventures"
+      ],
       "date": "2025-03-10",
       "source_url": ""
     }
