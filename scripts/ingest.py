@@ -1,8 +1,8 @@
 """
 AI Fundraise Tracker — Deal Ingestion Script
-Pulls from Google News RSS, Google Alerts Gmail, TechCrunch RSS.
+Pulls from Google News RSS, TechCrunch RSS.
 Extracts structured deal data using Kimi K2 API (OpenAI-compatible).
-Deduplicates and appends to Google Sheet.
+Deduplicates and appends to docs/deals.json.
 Runs every 12h via GitHub Actions.
 
 API cost: ~$0.10-0.30/month with Kimi K2
@@ -19,11 +19,9 @@ from html import unescape
 
 import feedparser
 import requests
-import gspread
-from google.oauth2.service_account import Credentials
 
 # ─── CONFIG ───────────────────────────────────────────────────
-SHEET_ID = os.environ.get("GOOGLE_SHEET_ID", "")
+DEALS_PATH = os.environ.get("DEALS_PATH", "docs/deals.json")
 LOOKBACK_DAYS = int(os.environ.get("LOOKBACK_DAYS", "3"))
 
 # Kimi K2 API (OpenAI-compatible)
@@ -73,37 +71,39 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 log = logging.getLogger(__name__)
 
 
-# ─── GOOGLE SHEETS ────────────────────────────────────────────
+# ─── JSON FILE STORAGE ────────────────────────────────────────
 
-def get_sheet():
-    creds_json = os.environ.get("GOOGLE_CREDENTIALS_JSON", "")
-    if not creds_json:
-        raise ValueError("GOOGLE_CREDENTIALS_JSON env var not set")
-    creds_data = json.loads(creds_json)
-    scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-    creds = Credentials.from_service_account_info(creds_data, scopes=scopes)
-    gc = gspread.authorize(creds)
-    return gc.open_by_key(SHEET_ID)
-
-
-def get_existing_deals(sheet):
+def load_existing_deals():
+    """Load existing deals from the JSON file."""
+    if not os.path.exists(DEALS_PATH):
+        return []
     try:
-        ws = sheet.worksheet("Deals")
-        rows = ws.get_all_records()
-        return rows, ws
-    except gspread.WorksheetNotFound:
-        ws = sheet.add_worksheet(title="Deals", rows=1000, cols=10)
-        headers = ["Company", "Description", "Category", "Round", "Amount_M",
-                   "Valuation_M", "Investors", "Date", "Source_URL", "Added_At"]
-        ws.append_row(headers)
-        return [], ws
+        with open(DEALS_PATH, "r") as f:
+            data = json.load(f)
+        return data.get("deals", [])
+    except (json.JSONDecodeError, IOError):
+        return []
+
+
+def save_deals(deals):
+    """Write all deals back to the JSON file."""
+    deals.sort(key=lambda d: d.get("date", ""), reverse=True)
+    output = {
+        "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "total_deals": len(deals),
+        "deals": deals,
+    }
+    os.makedirs(os.path.dirname(DEALS_PATH) or ".", exist_ok=True)
+    with open(DEALS_PATH, "w") as f:
+        json.dump(output, f, indent=2)
+    log.info(f"Saved {len(deals)} deals to {DEALS_PATH}")
 
 
 def deal_exists(existing_deals, company, date_str):
     company_lower = company.lower().strip()
     for deal in existing_deals:
-        existing_company = str(deal.get("Company", "")).lower().strip()
-        existing_date = str(deal.get("Date", ""))
+        existing_company = str(deal.get("company", "")).lower().strip()
+        existing_date = str(deal.get("date", ""))
         if company_lower in existing_company or existing_company in company_lower:
             try:
                 d1 = datetime.strptime(date_str, "%Y-%m-%d")
@@ -114,25 +114,6 @@ def deal_exists(existing_deals, company, date_str):
                 if existing_company == company_lower:
                     return True
     return False
-
-
-def append_deals(ws, new_deals):
-    for deal in new_deals:
-        row = [
-            deal.get("company", ""),
-            deal.get("description", ""),
-            deal.get("category", ""),
-            deal.get("round", ""),
-            deal.get("amount", ""),
-            deal.get("valuation", ""),
-            ", ".join(deal.get("investors", [])) if isinstance(deal.get("investors"), list) else deal.get("investors", ""),
-            deal.get("date", ""),
-            deal.get("source_url", ""),
-            datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
-        ]
-        ws.append_row(row)
-        time.sleep(0.5)
-    log.info(f"Appended {len(new_deals)} new deals to sheet")
 
 
 # ─── RSS SOURCES ──────────────────────────────────────────────
@@ -206,7 +187,7 @@ def is_funding_related(text):
 
 def extract_deal_with_kimi(article):
     """Use Kimi K2 API to extract structured deal data from an article.
-    
+
     Kimi uses the OpenAI-compatible /v1/chat/completions endpoint.
     Cost: ~$0.60/M input + $2.50/M output tokens = pennies per extraction.
     """
@@ -223,7 +204,7 @@ Published: {article.get('published', 'N/A')}
 Return this exact JSON structure (use null for unknown fields):
 {{
   "company": "Company Name",
-  "description": "One-line description of what the company does",
+  "desc": "One-line description of what the company does",
   "category": "One of: Foundation Models, AI Agents, Developer Tools, Enterprise AI, Creative AI, AI Infra, Data Infra, MLOps, Vertical AI, Robotics",
   "round": "e.g. Pre-Seed, Seed, Series A, Series B, Series C, Series D, Series E",
   "amount": 100,
@@ -321,11 +302,9 @@ def run_pipeline():
     log.info("AI Fundraise Tracker — Ingestion Pipeline (Kimi K2)")
     log.info("=" * 60)
 
-    # 1. Connect to Google Sheet
-    log.info("Connecting to Google Sheet...")
-    sheet = get_sheet()
-    existing_deals, ws = get_existing_deals(sheet)
-    log.info(f"Found {len(existing_deals)} existing deals in sheet")
+    # 1. Load existing deals from JSON
+    existing_deals = load_existing_deals()
+    log.info(f"Found {len(existing_deals)} existing deals")
 
     # 2. Collect articles from all sources
     articles = collect_articles()
@@ -343,14 +322,16 @@ def run_pipeline():
             date_str = deal.get("date", datetime.utcnow().strftime("%Y-%m-%d"))
             if not deal_exists(existing_deals, deal["company"], date_str):
                 new_deals.append(deal)
+                existing_deals.append(deal)  # prevent dupes within same run
                 log.info(f"  ✓ New deal: {deal['company']} — {deal.get('round', '?')} — ${deal.get('amount', '?')}M")
             else:
                 log.info(f"  ✗ Duplicate: {deal['company']}")
         time.sleep(1)  # Rate limit
 
-    # 6. Append to sheet
+    # 6. Save to JSON file
     if new_deals:
-        append_deals(ws, new_deals)
+        all_deals = load_existing_deals() + new_deals
+        save_deals(all_deals)
         log.info(f"Pipeline complete: {len(new_deals)} new deals added")
     else:
         log.info("Pipeline complete: no new deals found")

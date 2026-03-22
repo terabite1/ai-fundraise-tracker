@@ -28,19 +28,9 @@ jobs:
 
       - name: Run ingestion pipeline
         env:
-          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
           KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DEALS_PATH: docs/deals.json
         run: python scripts/ingest.py
-
-      - name: Export deals to JSON
-        env:
-          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
-          OUTPUT_PATH: docs/deals.json
-        run: python scripts/export_json.py
 
       - name: Commit and push deals.json
         run: |
