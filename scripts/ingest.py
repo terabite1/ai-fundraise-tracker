@@ -1,7 +1,8 @@
 """
 AI Fundraise Tracker — Deal Ingestion Script
-Pulls from Google News RSS, TechCrunch RSS.
+Pulls from Google News RSS (US + UK + Global), TechCrunch RSS, Crunchbase RSS.
 Extracts structured deal data using Kimi K2 API (OpenAI-compatible).
+Kimi decides AI relevance — no local keyword filter.
 Deduplicates and appends to docs/deals.json.
 Runs every 12h via GitHub Actions.
 
@@ -22,14 +23,14 @@ import requests
 
 # ─── CONFIG ───────────────────────────────────────────────────
 DEALS_PATH = os.environ.get("DEALS_PATH", "docs/deals.json")
-LOOKBACK_DAYS = int(os.environ.get("LOOKBACK_DAYS", "3"))
+LOOKBACK_DAYS = int(os.environ.get("LOOKBACK_DAYS", "7"))
 
 # Kimi K2 API (OpenAI-compatible)
 KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "")
 KIMI_BASE_URL = "https://api.moonshot.ai/v1"
 KIMI_MODEL = "kimi-k2-0905-preview"  # or "kimi-k2.5" for latest
 
-# Google News RSS search queries
+# Google News RSS search queries — used across all locales
 GOOGLE_NEWS_QUERIES = [
     "AI startup funding round",
     "artificial intelligence series raised",
@@ -43,16 +44,23 @@ GOOGLE_NEWS_QUERIES = [
     "AI company series A 2026",
 ]
 
-TECHCRUNCH_RSS = "https://techcrunch.com/category/venture/feed/"
-
-AI_KEYWORDS = [
-    "ai", "artificial intelligence", "machine learning", "deep learning",
-    "llm", "large language model", "generative ai", "gpt", "foundation model",
-    "neural network", "computer vision", "nlp", "natural language",
-    "robotics", "autonomous", "ml ops", "mlops", "ai agent",
-    "ai infrastructure", "ai safety", "transformer", "diffusion model",
-    "copilot", "chatbot", "multimodal", "text-to-", "speech-to-",
+# General queries (no AI keyword — catches deals the AI-specific queries miss)
+GENERAL_FUNDING_QUERIES = [
+    "startup raises million funding 2026",
+    "startup series funding round 2026",
+    "seed round startup venture 2026",
+    "startup secures million investment",
 ]
+
+# Locales to search — US, UK, and general/global
+GOOGLE_NEWS_LOCALES = [
+    {"hl": "en-US", "gl": "US", "ceid": "US:en"},
+    {"hl": "en-GB", "gl": "GB", "ceid": "GB:en"},
+    {"hl": "en",    "gl": "",   "ceid": "en:en"},
+]
+
+TECHCRUNCH_RSS = "https://techcrunch.com/category/venture/feed/"
+CRUNCHBASE_RSS = "https://news.crunchbase.com/feed/"
 
 CATEGORY_MAP = {
     "Foundation Models": ["foundation model", "llm", "large language", "gpt", "transformer", "open-source model", "open-weight", "frontier model"],
@@ -118,31 +126,36 @@ def deal_exists(existing_deals, company, date_str):
 
 # ─── RSS SOURCES ──────────────────────────────────────────────
 
-def fetch_google_news_rss(query, lookback_days=LOOKBACK_DAYS):
+def fetch_google_news_rss(query, locale, lookback_days=LOOKBACK_DAYS):
     encoded_query = requests.utils.quote(query)
-    url = f"https://news.google.com/rss/search?q={encoded_query}+when:{lookback_days}d&hl=en-US&gl=US&ceid=US:en"
+    hl = locale["hl"]
+    gl = locale["gl"]
+    ceid = locale["ceid"]
+    gl_param = f"&gl={gl}" if gl else ""
+    url = f"https://news.google.com/rss/search?q={encoded_query}+when:{lookback_days}d&hl={hl}{gl_param}&ceid={ceid}"
     articles = []
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:10]:
+        for entry in feed.entries[:20]:
             articles.append({
                 "title": unescape(entry.get("title", "")),
                 "link": entry.get("link", ""),
                 "published": entry.get("published", ""),
                 "summary": unescape(entry.get("summary", "")),
-                "source": "google_news",
+                "source": f"google_news_{gl or 'global'}",
             })
     except Exception as e:
-        log.warning(f"Google News RSS error for '{query}': {e}")
+        log.warning(f"Google News RSS error for '{query}' ({gl or 'global'}): {e}")
     return articles
 
 
-def fetch_techcrunch_rss():
+def fetch_rss_feed(url, source_name, max_entries=20):
+    """Generic RSS fetcher for TechCrunch, Crunchbase, etc."""
     articles = []
     try:
-        feed = feedparser.parse(TECHCRUNCH_RSS)
+        feed = feedparser.parse(url)
         cutoff = datetime.utcnow() - timedelta(days=LOOKBACK_DAYS)
-        for entry in feed.entries[:20]:
+        for entry in feed.entries[:max_entries]:
             published = entry.get("published_parsed")
             if published:
                 pub_dt = datetime(*published[:6])
@@ -153,16 +166,11 @@ def fetch_techcrunch_rss():
                 "link": entry.get("link", ""),
                 "published": entry.get("published", ""),
                 "summary": unescape(entry.get("summary", ""))[:500],
-                "source": "techcrunch",
+                "source": source_name,
             })
     except Exception as e:
-        log.warning(f"TechCrunch RSS error: {e}")
+        log.warning(f"{source_name} RSS error: {e}")
     return articles
-
-
-def is_ai_related(text):
-    text_lower = text.lower()
-    return any(kw in text_lower for kw in AI_KEYWORDS)
 
 
 def is_funding_related(text):
@@ -195,7 +203,7 @@ def extract_deal_with_kimi(article):
         log.warning("No KIMI_API_KEY set, skipping Kimi extraction")
         return None
 
-    prompt = f"""Extract the AI startup funding deal from this article. Return ONLY a JSON object, no markdown, no backticks, no explanation.
+    prompt = f"""Analyze this article and extract any startup funding deal. Return ONLY a JSON object, no markdown, no backticks, no explanation.
 
 Article title: {article['title']}
 Article summary: {article.get('summary', 'N/A')[:800]}
@@ -211,15 +219,16 @@ Return this exact JSON structure (use null for unknown fields):
   "valuation": 500,
   "investors": ["Lead Investor 1", "Investor 2"],
   "date": "YYYY-MM-DD",
+  "is_ai_related": true,
   "is_valid_deal": true
 }}
 
 Rules:
-- "amount" is in millions USD (number only, no $ sign). 100 means $100M.
+- "amount" is in millions USD (number only, no $ sign). 100 means $100M. Convert other currencies to USD.
 - "valuation" is post-money valuation in millions USD. Use null if not mentioned.
+- "is_ai_related" should be true if the company uses AI/ML in any significant way — including as a core product, as infrastructure, or as a key feature (e.g. AI-powered privacy tools, voice AI, computer vision analytics, AI content creation). Be inclusive.
 - "is_valid_deal" should be false if this isn't actually a funding round announcement.
-- "date" should be the deal announcement date in YYYY-MM-DD format. Use today's date if unclear.
-- Only include this deal if the company is clearly AI/ML related."""
+- "date" should be the deal announcement date in YYYY-MM-DD format. Use today's date if unclear."""
 
     try:
         resp = requests.post(
@@ -248,9 +257,10 @@ Rules:
         text = re.sub(r"\s*```$", "", text)
         deal = json.loads(text)
 
-        if not deal.get("is_valid_deal", False):
+        if not deal.get("is_valid_deal", False) or not deal.get("is_ai_related", False):
             return None
         deal.pop("is_valid_deal", None)
+        deal.pop("is_ai_related", None)
         deal["source_url"] = article.get("link", "")
         return deal
 
@@ -261,39 +271,59 @@ Rules:
 
 # ─── MAIN PIPELINE ────────────────────────────────────────────
 
-def collect_articles():
-    all_articles = []
-    seen_titles = set()
-
-    for query in GOOGLE_NEWS_QUERIES:
-        log.info(f"Fetching Google News: '{query}'")
-        articles = fetch_google_news_rss(query)
-        for a in articles:
-            title_hash = hashlib.md5(a["title"].lower().encode()).hexdigest()
-            if title_hash not in seen_titles:
-                seen_titles.add(title_hash)
-                all_articles.append(a)
-        time.sleep(1)
-
-    log.info("Fetching TechCrunch Venture RSS")
-    tc_articles = fetch_techcrunch_rss()
-    for a in tc_articles:
+def _add_unique(articles, all_articles, seen_titles):
+    """Deduplicate articles by title hash."""
+    for a in articles:
         title_hash = hashlib.md5(a["title"].lower().encode()).hexdigest()
         if title_hash not in seen_titles:
             seen_titles.add(title_hash)
             all_articles.append(a)
+
+
+def collect_articles():
+    all_articles = []
+    seen_titles = set()
+
+    # AI-specific queries across all locales
+    for locale in GOOGLE_NEWS_LOCALES:
+        gl = locale["gl"] or "global"
+        for query in GOOGLE_NEWS_QUERIES:
+            log.info(f"Fetching Google News ({gl}): '{query}'")
+            articles = fetch_google_news_rss(query, locale)
+            _add_unique(articles, all_articles, seen_titles)
+            time.sleep(0.5)
+
+    # General funding queries (catches non-obvious AI deals)
+    for locale in GOOGLE_NEWS_LOCALES:
+        gl = locale["gl"] or "global"
+        for query in GENERAL_FUNDING_QUERIES:
+            log.info(f"Fetching Google News general ({gl}): '{query}'")
+            articles = fetch_google_news_rss(query, locale)
+            _add_unique(articles, all_articles, seen_titles)
+            time.sleep(0.5)
+
+    # TechCrunch
+    log.info("Fetching TechCrunch Venture RSS")
+    tc_articles = fetch_rss_feed(TECHCRUNCH_RSS, "techcrunch")
+    _add_unique(tc_articles, all_articles, seen_titles)
+
+    # Crunchbase
+    log.info("Fetching Crunchbase News RSS")
+    cb_articles = fetch_rss_feed(CRUNCHBASE_RSS, "crunchbase")
+    _add_unique(cb_articles, all_articles, seen_titles)
 
     log.info(f"Collected {len(all_articles)} unique articles")
     return all_articles
 
 
 def filter_relevant(articles):
+    """Only require funding-related signals — Kimi decides AI relevance."""
     relevant = []
     for a in articles:
         text = f"{a['title']} {a.get('summary', '')}"
-        if is_ai_related(text) and is_funding_related(text):
+        if is_funding_related(text):
             relevant.append(a)
-    log.info(f"Filtered to {len(relevant)} AI funding articles")
+    log.info(f"Filtered to {len(relevant)} funding articles (Kimi will judge AI relevance)")
     return relevant
 
 
