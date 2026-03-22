@@ -306,6 +306,12 @@
     color: var(--accent);
     flex-shrink: 0;
     font-family: var(--font-mono);
+    overflow: hidden;
+  }
+  .company-logo img {
+    width: 100%; height: 100%;
+    object-fit: contain;
+    padding: 4px;
   }
   .company-name { font-weight: 600; color: var(--text); font-size: 14px; line-height: 1.3; }
   .company-desc {
@@ -593,7 +599,7 @@ function renderTable() {
       return `<tr>
         <td>
           <div class="company-cell">
-            <div class="company-logo">${(d.company || '?')[0]}</div>
+            <div class="company-logo">${d.website ? `<img src="https://www.google.com/s2/favicons?domain=${d.website}&sz=128" alt="" onerror="this.replaceWith(document.createTextNode('${(d.company || '?')[0]}'))">` : (d.company || '?')[0]}</div>
             <div>
               <div class="company-name">${d.company || 'Unknown'}</div>
               <div class="company-desc">${d.desc || ''}</div>

@@ -212,6 +212,7 @@ Published: {article.get('published', 'N/A')}
 Return this exact JSON structure (use null for unknown fields):
 {{
   "company": "Company Name",
+  "website": "company.com",
   "desc": "One-line description of what the company does",
   "category": "One of: Foundation Models, AI Agents, Developer Tools, Enterprise AI, Creative AI, AI Infra, Data Infra, MLOps, Vertical AI, Robotics",
   "round": "e.g. Pre-Seed, Seed, Series A, Series B, Series C, Series D, Series E",
@@ -224,6 +225,7 @@ Return this exact JSON structure (use null for unknown fields):
 }}
 
 Rules:
+- "website" is the company's main domain without protocol (e.g. "cursor.com", "openai.com"). Use null if unknown.
 - "amount" is in millions USD (number only, no $ sign). 100 means $100M. Convert other currencies to USD.
 - "valuation" is post-money valuation in millions USD. Use null if not mentioned.
 - "is_ai_related" should be true if the company uses AI/ML in any significant way — including as a core product, as infrastructure, or as a key feature (e.g. AI-powered privacy tools, voice AI, computer vision analytics, AI content creation). Be inclusive.
