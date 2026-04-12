@@ -1,7 +1,81 @@
 {
-  "last_updated": "2026-04-09T19:13:57Z",
-  "total_deals": 86,
+  "last_updated": "2026-04-12T18:54:35Z",
+  "total_deals": 103,
   "deals": [
+    {
+      "company": "Alibaba",
+      "website": null,
+      "desc": "Building a new kind of AI model to overcome current large-language-model limitations",
+      "category": "Foundation Models",
+      "round": null,
+      "amount": 290,
+      "valuation": null,
+      "investors": [
+        "Alibaba"
+      ],
+      "date": "2026-04-10",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdWpwTE5mbWtyYi1SdFM2aG50ZGVyT2ZUZHVaT0h2Zko3UWNiNUNKVUFLQ3hqdTBmbGdoRk1zN2FkcDFsZEQyZjZMeWRnczFQZE1nUjNmeWRUX3dxRVFpeko2dkhDUV80emp4dDQ3UzVlLXBxdXZKdmYwLUdnT3ozSzVPSkZzclJLOUV0NHpKcnTSAZYBQVVfeXFMTllpeklJeGZsaGxQWXZITDBuVzdIX3FoaUNyb3lKdVBXUkR6ejBuLTB1VFF5ZXFLeXdxdUJDR05LbkRDWlBRUVRULTkwcHhmVmFnTEVoV1hvWWdTLUJqVWhBX0dvb2hNZGpkVy15V2FLNDYtbWhmY1pSYnhIbzlRMkZrbGduaFJueFZEQWJaTjhmMUlHQ2JR?oc=5"
+    },
+    {
+      "company": "ShengShu",
+      "website": null,
+      "desc": "Advancing artificial general intelligence",
+      "category": "Foundation Models",
+      "round": null,
+      "amount": 293,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-10",
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbkdpSnVHajVGdVFmY0l2X0F1T1Jia2pkY3Z4RnIzVGhBMkRuSzRKcWN1c2poQUNXb0FDZDdtcWtwS3pSckNPZzRCUVhnVW9xVjV1SnUtcTBYaHVWVlF3Y1JxcEprazRkcDR3NFJIb0VKSlMzRWZMV3VOa252bTFfTGYwWkZUSkxwZzJxbGVmUjhONlRkX3NPYzJLOUstbDlHRl9LVms4dEl3T2tDeWFWSDg3N18tTnZIUVNjckxFSGk3YWM?oc=5"
+    },
+    {
+      "company": "Inner AI",
+      "website": null,
+      "desc": "SaaS platform leveraging AI",
+      "category": "Enterprise AI",
+      "round": "Seed",
+      "amount": 5,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-10",
+      "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5TTjQ3ZXUtdEFpU3NiSlBPRVhXTHNsX25XS0M5UXp6ZUJ2TkZraWk5X0VqYlZlVVBRT1Vpak8tQ3hvRkFULWlqbFhyQmlmd1c1OFhlTHZ2dGRqT2VGVlJzVTYwbVpMYm1wM1NvMW1GNFNYX1k?oc=5"
+    },
+    {
+      "company": "xAI",
+      "website": "x.ai",
+      "desc": "Elon Musk\u2019s AI company building advanced foundation models and infrastructure",
+      "category": "Foundation Models",
+      "round": "Series B",
+      "amount": 20000,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-10",
+      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPLVlJZU1vUUtkdTM5OEtXSFIxMWczWjN2Ujg3aERSbktCc0ZpTUZJeHgtN25lQTZoRGY1VEszVE9CZm5LQ2djU3Q5Y25oVm1ZV2JmaFhNX3JMLXVVVjhjbGI4SWJzc1ZiVmdCc1pOekRfZ0R1Y3BGTzI3dHptbF9lb3hoYnZDT0dHV2NTUDNmT2UwWUxHcEZKTDY4b0N0Wk92ejlQWkJ3MjBvMGUxUUVOeXRGT0E1QVpt?oc=5"
+    },
+    {
+      "company": "Finally Foods",
+      "website": null,
+      "desc": "Grows dairy proteins in potatoes using AI",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 2.6,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-10",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOX0Y3RGUwYW5LUngxSV92dWVYYU1nUmtTQ09USEtEWlhCMTlvYUQ3LW1vUGxlaHpSRHBuOE1Zb3lCdmNXUGdOSll1NElqLTRFWHpmWldfMzRmYjFVeHQ5bE1xNVhIOUhzNGd4WF9wWGsxMDI3VWltUlpZS1V4bmpkN2ZwM3RJbXViSmxoNFJodHVaV09BOEVFZGFmVDNaV3dCZFJtMVpn?oc=5"
+    },
+    {
+      "company": "Eight",
+      "website": null,
+      "desc": "Video-first dating app",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 3.3,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-10",
+      "source_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPX0JTRVpyNzJlVEU2a3piMl9SamVqT0tmb3pIZkVhUm1iaTlCemg0ZFFUcUw1VXFxVWVZc1hOVnJRUnpBR1BBUGlLRUNzMEVUUFlGbVpyMjdaa09RMm1yWWUtVDdxZkF4TzNBRHZzRUpfQzdkSWVLeWwtQnZ1VzUtTW5vOUd0SGNHcHpjeUpWRXVkSnhsOXBhREhVMkwxSlB2bzh0dzJvMG9QNGdpTlQ2V2RnMWdpc2JUWGMyZ0lzd2UydTQtazE2NUtaR3A4TDEtWnRPUW1aaTNYUktOdXIwRGtScw?oc=5"
+    },
     {
       "company": "Nava",
       "website": null,
@@ -145,6 +219,68 @@
       "investors": [],
       "date": "2026-04-09",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWUp3WmstQ3MzUTdyd05NM2RkRDdCMVpZc2t0cjhWLXlkb1ItSjRoWUNweFVOUElGZ0hQUFZBbjYxRkozUklqOV9rN2kyajFwOWp3bDFKbTREazJtLWZCeGJPSHlydVdHaVF0S2c1MmFEd1pyeThlLUxqVGpROWxjQ3NmbFVpcVVJeVNJZmJaVmFRNzNGRmV5aWdLc2JDczdXZnBoVjdoVFMxYkVlWXo1aVVn?oc=5"
+    },
+    {
+      "company": "Medicare navigation company",
+      "website": null,
+      "desc": "Medicare navigation platform that uses AI to guide seniors and plans to launch new financial products",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 100,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-09",
+      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWUgxMUZMNzVfcjVYOEo5c21KZUs4SDJOLUxTaUFGWXpZZnRBZm1jWFZDWllQaS11bk1OWThndzB5UG54bjZZa3h3OVlDSWRYZTNxbktfZmQwbUxyamlCNklodDROYTFaMU9RYThJMHdzN203N0d6TWRFSWFqMUxTcVlZeFJ5eGJ1STNjdm5fdUN0WXF1SXFzd2xISnREODNOUDY0Mm04WnYwcG83Rjk1TVp0aE04Nzdhc0I1VGZYVFo4bDQ4bzh2bmtUUXBGaURtWVlxOQ?oc=5"
+    },
+    {
+      "company": "Aim Intelligence",
+      "website": null,
+      "desc": "AI security startup",
+      "category": "Vertical AI",
+      "round": "Series A",
+      "amount": 7,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-09",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPS3A1NWtRV09KRFNMdkNwN3VOTHVwLVExYWRuZHhzenlPQ1FGZlU3NENVUHBmOWFfV2xXdWVsaFlLRTRyTkstbUhGdjZob0dyNEZjOWRYUWhYYUlEZkJwaFdGTkFGM0tWS2JtNG5HMThzWTVzeEwzVHNwUEcyNnpvbGtRN3J1UmRvSDcyUExuLXdjb0w5OVJGZzhIQnQwZw?oc=5"
+    },
+    {
+      "company": "Flashpass",
+      "website": null,
+      "desc": "Tech skills platform tackling 'AI doomerism'",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 4.1,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-09",
+      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOEZnaUJNOVVZenowVEZ0Tm4yUkNqS1pmck03S0ZxUzU3dHBNTHd4Z3BFLTN2ME9aQzRnNHF4cjZCNUhrOGp1bkIwTjd5NVR1eUdORUhYaDlfR2J2UUdLd0FfYzhqT2lyMDZvZU1sbG9pVU9TVU9ZLXhvWjNhNlRIcG55RC16VkJWODAwWGxydnVvc0VPVDlTRWhqQzJIMUZHbmsxaG5XM3hRVVAxcF92dXBjdGl4NWNSMEtjVjNqNjRJTnRXc2o4?oc=5"
+    },
+    {
+      "company": "Standing Ovation",
+      "website": null,
+      "desc": "Revolutionizing sustainable dairy production",
+      "category": "Vertical AI",
+      "round": "Series B",
+      "amount": 34.2,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-09",
+      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaGxvbnhmcmdadGp0MXhKNWtuUWplX3FZRm9CWFBCTkJ3cmZLRHAybEUyQkJRVDVzWWQ1d2ZrOG5PRFBTRjdkektCbExDaG9tOURCdjh6eWVhbmtsMHBpWk81ZGRPSGU4bzVISFU0amF0bVp4ckQ0T3J5ZHN2bDg2MXlZbkFvdXBSNzFNV3ZSXzNidlBkX2xNaURGMkZEUG1Jc3otZUhsdWRqOHVSUkMtRGVCSy10VERmLWxxVFplV1c?oc=5"
+    },
+    {
+      "company": "Luminai",
+      "website": null,
+      "desc": "AI-powered workflow automation platform",
+      "category": "Enterprise AI",
+      "round": "Series B",
+      "amount": 38,
+      "valuation": null,
+      "investors": [
+        "Peak XV Partners"
+      ],
+      "date": "2026-04-09",
+      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbGg3RFNqN2s0U05rZzVsZUJaQVpCRnVUSHhiZVh2dEZZUVAxV0J4RjlHNUw2LUlLZTl0bXNZUGdGa3pRWE9DMFFBdFZIaXhQNFIyMUxfTldFNVA1VUgyWkJhel9YWmUxcU1rZzhWSGVKTTFrUTZweEFfT2c2UjctOGFkVkdkMHlqaUNHTEhKcndESXhmR3JQbGhSTXNydzJ4bGVuZ3pNRmI1UVd3THlNeXFHelpUcUVmNjJYcTA1VDkxYWFmOGFfazZaa1FiRk1VWU5FVmRB0gHbAUFVX3lxTE8teDdTY0x0ZWhVXzVWZGVaeEx4eXZVLVR2cDdTeFdaRV80amxMNHJVX3FPS1F6M3pLTWdKeVZkdkpoQ2dUcl9LT3g1UjlLMHdOeHdqS2ZodmhqMFVpem9BTzZDYlp2MEtHSjhUXzAxZEVxZm5KcnZrLXQwWm13bDN3Q3lKdUYxYmdQbjc2RlJxZF9rMGJJSm9zUXIyTzVvRVFINVUzV3R0M2YxUlo1Yzl6N1F3cFVPYS1ucWhseGl3eV8ySXgwa1M0Rm1qUk9KWUN1UDR3WHZkaml5Zw?oc=5"
     },
     {
       "company": "NeuBird AI",
@@ -524,6 +660,83 @@
       "investors": [],
       "date": "2026-04-07",
       "source_url": "https://news.crunchbase.com/venture/interesting-startup-deals-mineral-rights-flying-ferry-ai-clean-tech/"
+    },
+    {
+      "company": "Soma Energy",
+      "website": null,
+      "desc": "Uses AI to accelerate data-center grid connections",
+      "category": "AI Infra",
+      "round": "Seed",
+      "amount": 7,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-07",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWTRWN0lJNkRUZUstdVZGbTNXQlZBanJGdE5hTEhKekRuOFZrQmhZQWdSRkRjWnZtd3d5VEY4UWVVa1BveVVjVlM4ZGpQSThmd1BNWEdranE3a1pVbGw1UFc3aERHZzY4SXBaQmh4cUdDWE9QZzkzTDJsNnFrcFdfRTYxRDdmdHlpUlY2TE9TTGN6Q0xPTFdLX3VoamVZMXlCMDZrdXYwUTA4MUhTc2Uzeg?oc=5"
+    },
+    {
+      "company": "Liminal",
+      "website": null,
+      "desc": "AI agent security platform",
+      "category": "AI Infra",
+      "round": "Seed",
+      "amount": 13,
+      "valuation": null,
+      "investors": [
+        "OpenAI leaders",
+        "Spotify leaders"
+      ],
+      "date": "2026-04-07",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOW5ab1ZsRVFkbHVONlA5eUtFRzdzUGNUYkZJSzlUbmdwR3U5Uy03RlhXQWR4eFlsQ2FRejRkYldieHh5SUJjekxhUmdJUFQ0MUNTcmp1TXdncnRnaEdKcGdjeG1fZTVYV1pLTE9TOGdsNzNpMzdSY3AxRWc3bW5RRFdHTEFfcldFWVdlb2xpTXI2UHN0Snc1aWV1dmF1VjRzS1RjcG03WEpkZlZ4WExDag?oc=5"
+    },
+    {
+      "company": "Linx Security",
+      "website": null,
+      "desc": "Identity-risk cybersecurity platform",
+      "category": "Enterprise AI",
+      "round": "Series B",
+      "amount": 50,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-07",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQmI0bVZDU0JjcTRfNk9DV3R6anY5c1RpTlhtRTV5N2hjUnBjZVp2eFctTU52dW5FVUpBXy1mT3JRcmhCd0FldE5qRGhRcmdqTzVYV3l1Nnp6eXc0RVVpa1hOUzAwT2l4OEVRbnNVeGtfRGdtd0JYSEdkNXdCbGdPQjdzS3MxemhldlJJaDIxUEhwa2o2ZEk4?oc=5"
+    },
+    {
+      "company": "DepthFirst",
+      "website": null,
+      "desc": "AI security lab",
+      "category": "AI Infra",
+      "round": "Series B",
+      "amount": 80,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-07",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUGtiRFBpVFl2UmtvWmdYN3FRamdZSXdyODZaMVhiZ3IwR1dzLW5OdlR5YkRlNjZRR1U0VkdLendBV1hlLU1SUjBXTFdVUmc5Z1JVVUoxTjBXdzVXMXBxaEl6d2pWZWFhQlhxeW4tV3JEZXpuR09SYURtOFUyS28wVmtvMFAyMWotcHg5dVRCcWU?oc=5"
+    },
+    {
+      "company": "ZSystems",
+      "website": null,
+      "desc": "Digitizes retail supply chains",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 1.65,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-07",
+      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8tZDJtcTdHd1lIZzNTMkpiQi1BQnBxd0ZielNUMFZqZms2c3ZLc2xJdmVoZkxiVFpjVV9FY2J0akczSWkzc2VVWTRZc3MxemZoQmFDemczeTVwOVo5QUNUT01oRDRtdk1BemFqX0x3TVZCbC1RQUsw?oc=5"
+    },
+    {
+      "company": "StairMed",
+      "website": null,
+      "desc": "China-based brain-machine interface startup",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": null,
+      "valuation": null,
+      "investors": [
+        "Alibaba"
+      ],
+      "date": "2026-04-07",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdzhVVW5Ud2NWc1c5Z3JCMGY1dGp2ZlRnTHpnUUJqcXZnSHVmSXMwa2JWNjBTMFg5V1R2MWQ1YzZoQll1WDI0M25XMEE2THNseW9wMFl1TjN5cm1qa013YWRWN1ZBZU53VTU2Q29VNTFfUVVDMDFYOHRjRlNiQjJNTkZmTjJCdmJZT0pjMg?oc=5"
     },
     {
       "company": "Xoople",
