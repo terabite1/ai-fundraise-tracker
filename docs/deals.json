@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-04-12T18:54:35Z",
-  "total_deals": 103,
+  "last_updated": "2026-04-13T19:23:20Z",
+  "total_deals": 110,
   "deals": [
+    {
+      "company": "Round",
+      "website": null,
+      "desc": "AI fintech startup",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 6,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-13",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQN01jdGhIRXhJUHI2ODdIM19UNTY3ZDFoSzZ5dTh4bnU5SEFBb1YwYkhvTjVURmROOG5sX2YyZnNYdUNkV3dBMko5QVphQnF1TE9qMzUzejBZa3ItVEdwcFlycnNqQnVCd09sR1R1MWNTQ1hQMzB3dlE5LW1qczFYRk1MMG5TbElEQjN2Yg?oc=5"
+    },
+    {
+      "company": "Neocad",
+      "website": null,
+      "desc": "AI-based solutions provider",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 0.55,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-13",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONjlrUU9nb1FQTWFSOFRkYmJEa1dwRE9QeDRHemJwUDRBLW56U19VTng3d0tGa3g5WXpHbC1vdDJOSEhseTRESzQzWkl6WlQtcEg3M3dUemdzemZ5WEVhSkpNNXJybE0xQWZjeEJsUl9aTS1UbUVOSEpBRnpOYnVmZldMNWtIa3EwYTVIMDE0RHpTMUdhTTNyMmln?oc=5"
+    },
+    {
+      "company": "Agnes AI",
+      "website": null,
+      "desc": "Singapore-based AI infrastructure platform provider",
+      "category": "AI Infra",
+      "round": "Series A",
+      "amount": null,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-13",
+      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPak1mdEtXanZINWRLbGo2emdydnF1QWk4QzhKaWo0VlNYZGdwbUdEWWwxcG0zamdVYXBqSk04Z1lxbHJzYWlEdWFoZ0dMZXhOZHhIWnE3dTdYN0hJZUxKVGJ5RmlCQlp1Tzk4Q0pWTEhhM2doNTh1NEtDOGF0S296dGRyaFNrRjI2Q0l3WVhEQ01HcklLOW9nTV9DRG1DVTl0NTFERHJnLVJCeUdIcUg4akYtR09yT0E0QVNDZ29wbkRjUlFGZ3RJVW5Uc25wRFNBb3BR?oc=5"
+    },
     {
       "company": "Alibaba",
       "website": null,
@@ -283,6 +319,32 @@
       "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbGg3RFNqN2s0U05rZzVsZUJaQVpCRnVUSHhiZVh2dEZZUVAxV0J4RjlHNUw2LUlLZTl0bXNZUGdGa3pRWE9DMFFBdFZIaXhQNFIyMUxfTldFNVA1VUgyWkJhel9YWmUxcU1rZzhWSGVKTTFrUTZweEFfT2c2UjctOGFkVkdkMHlqaUNHTEhKcndESXhmR3JQbGhSTXNydzJ4bGVuZ3pNRmI1UVd3THlNeXFHelpUcUVmNjJYcTA1VDkxYWFmOGFfazZaa1FiRk1VWU5FVmRB0gHbAUFVX3lxTE8teDdTY0x0ZWhVXzVWZGVaeEx4eXZVLVR2cDdTeFdaRV80amxMNHJVX3FPS1F6M3pLTWdKeVZkdkpoQ2dUcl9LT3g1UjlLMHdOeHdqS2ZodmhqMFVpem9BTzZDYlp2MEtHSjhUXzAxZEVxZm5KcnZrLXQwWm13bDN3Q3lKdUYxYmdQbjc2RlJxZF9rMGJJSm9zUXIyTzVvRVFINVUzV3R0M2YxUlo1Yzl6N1F3cFVPYS1ucWhseGl3eV8ySXgwa1M0Rm1qUk9KWUN1UDR3WHZkaml5Zw?oc=5"
     },
     {
+      "company": "Shield AI",
+      "website": "shield.ai",
+      "desc": "AI-powered autonomous systems for defense and aviation",
+      "category": "Robotics",
+      "round": "Series F",
+      "amount": 2000,
+      "valuation": 12700,
+      "investors": null,
+      "date": "2026-04-09",
+      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPS0xISi04VHlvai0yemstNk1vM2pHRXVnU0xLYnMwQTdhWGNoZzNOR3RJV2xqbjNEUzlXTkxWckZTNjRaVllJX1YtMWVIODBBemdxMlJXOEJCU0ktTktPaHl4T21mYjZ6MXA5RzltTTFHU0UxZHZqaDdJT1AxbVBPMmpNYlBMaUw4Z3VJa0Iya1I5T21TM0hZRi15Nm5XMkJ6Z29iRVNnOWxnSzZ4Ti1uS1BDODlRTWJJcDI1aWNocUR3M0o0MVd6clRtMGFpOTA?oc=5"
+    },
+    {
+      "company": "DAAKit",
+      "website": null,
+      "desc": "Developer toolkit for data access and analytics",
+      "category": "Developer Tools",
+      "round": "Pre-Seed",
+      "amount": 0.138,
+      "valuation": null,
+      "investors": [
+        "Inflection Point Ventures"
+      ],
+      "date": "2026-04-09",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbGxxUUIyMFQ5LXF0RVRuSExwbU9PR0sxbXV1V2hFRUwxZGxFYVNiV2FtWFBrbmk1c0xCRThpZktTbXFsRXdNX0RTUjh6MTJFRkY5RzRnOGIxR19XZ2JQRXRhS0lSZHRaeTRyOW1IMXBnd1k5X2tkNzhBZ3Z4V3FHM1dKLTVoQ1U0UmJscEppeThHN0JFWWlvS29CQ0p3cU0xVzNjdGtlOEVFLWc?oc=5"
+    },
+    {
       "company": "NeuBird AI",
       "website": null,
       "desc": "AI platform for enterprise IT operations",
@@ -451,6 +513,18 @@
       "investors": [],
       "date": "2026-04-08",
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQ1kxNGd3REoyZlB1M2t3WWlLNXJBUGlGdWVlR2RMaW5VVWcyb3cxU3U5cE5vdVVTOW1wU2drcGhsMXk1Nm1GcFpVd2N0Vks5aTh5Z19DQmNOS2ZNc0VYM2RVY3VVdG9wam1uWnkwVXZrOVhENkpHRldCVzhpTWlIN0dIbGZyLXNYcFVNX25DVlBOaXFYTHdjZkhjVnhWdUYzLTFNZ011bng?oc=5"
+    },
+    {
+      "company": "Humanly",
+      "website": null,
+      "desc": "AI platform that supports job seekers, not just hiring companies",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 25,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-08",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUjlraVlGQzlLdUFjaWFqNy0zam81Qk9UU2F0dzRMd1dQbXJMTzZxcExBQ2VlUXVMOEdlaTd1d3hMZENfODVUVi1NZlFsQzhhU3IxWkY3WkR3LVRhazM1ODNNdVhLQ3A5b3FScVV3ZXZoc01EczF5enhFdmE1bVhILXl3MzhkaVFnTWNKX0dVQTQyTWRfak1xTFE5UC0wQmlrZlMxZ1VWcG4taFUyMVg2RUtuYThsQWFPRWc?oc=5"
     },
     {
       "company": "Kandou AI",
@@ -737,6 +811,21 @@
       ],
       "date": "2026-04-07",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdzhVVW5Ud2NWc1c5Z3JCMGY1dGp2ZlRnTHpnUUJqcXZnSHVmSXMwa2JWNjBTMFg5V1R2MWQ1YzZoQll1WDI0M25XMEE2THNseW9wMFl1TjN5cm1qa013YWRWN1ZBZU53VTU2Q29VNTFfUVVDMDFYOHRjRlNiQjJNTkZmTjJCdmJZT0pjMg?oc=5"
+    },
+    {
+      "company": "Laminar AI",
+      "website": null,
+      "desc": "AI agent security platform",
+      "category": "AI Infra",
+      "round": "Seed",
+      "amount": 13,
+      "valuation": null,
+      "investors": [
+        "OpenAI leaders",
+        "Spotify leaders"
+      ],
+      "date": "2026-04-07",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOW5ab1ZsRVFkbHVONlA5eUtFRzdzUGNUYkZJSzlUbmdwR3U5Uy03RlhXQWR4eFlsQ2FRejRkYldieHh5SUJjekxhUmdJUFQ0MUNTcmp1TXdncnRnaEdKcGdjeG1fZTVYV1pLTE9TOGdsNzNpMzdSY3AxRWc3bW5RRFdHTEFfcldFWVdlb2xpTXI2UHN0Snc1aWV1dmF1VjRzS1RjcG03WEpkZlZ4WExDag?oc=5"
     },
     {
       "company": "Xoople",
