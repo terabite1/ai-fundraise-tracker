@@ -1,7 +1,131 @@
 {
-  "last_updated": "2026-04-15T19:24:02Z",
-  "total_deals": 144,
+  "last_updated": "2026-04-16T19:20:55Z",
+  "total_deals": 160,
   "deals": [
+    {
+      "company": "Spektr",
+      "website": null,
+      "desc": "Fintech compliance automation platform",
+      "category": "Vertical AI",
+      "round": "Series A",
+      "amount": 20,
+      "valuation": null,
+      "investors": [
+        "NEA"
+      ],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTGNjMmlub3B4WXFPd3FWYUo0REgtSmdkSUo1UDY3dnhnUG5JUE5vOHA3NmhJSUhWSHdkWXVvZEtPWkphVVZ1Y3lGVmdEMzUzZVh1MVdOcHNjX0tHSzhOaGpyb0pFNmpRSGp6SG45NU9RRk16cjVrdUJUenpleVhZRFMtNE1OTkRxV213?oc=5"
+    },
+    {
+      "company": "Wealth.com",
+      "website": "wealth.com",
+      "desc": "AI-powered estate planning platform for financial advisors and consumers",
+      "category": "Vertical AI",
+      "round": "Series B",
+      "amount": 65,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWWJCb2p1a2dYSGoyQ3lXTzVCazdndlVjWXJhQnF0d2tON3l1YkY3MTdlaVpqMVJUeVRwNGxvOUNUcnRZdFlXV1FJcGlEU1BmeS1xRXh0end2TG9tRmNod2ZtTC1wZUVYdWRJZktXN0JmSFJLaVJTUHBfVG10WmZBRERYTFhCVnNJY1VYM1N4SER3MXFNQmtkSlMyZy1RRTJyR3J5Q1VSYkF3eVdSZ29BR1cwQ25NQQ?oc=5"
+    },
+    {
+      "company": "Delta Intelligence",
+      "website": null,
+      "desc": "Chinese robot AI startup",
+      "category": "Robotics",
+      "round": null,
+      "amount": 14.7,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZndLc1FYQ2hjWm13VlNEQlZ4bHl1bVg0V09TZHMzdHdUeXhNTDh0Qm5xaHpITnFuU1pRaGs4MHJ0R01BVlBDdFdmamhoSnBaSEQ3Umd1TDgzcU9LdHNyUVhfaWZzTlp2VWpVS3p1Sld3c1JfYVkwcEx3cEdVcGxxaFpsWVIxbFB2akpxX2daQzA?oc=5"
+    },
+    {
+      "company": "Antioch",
+      "website": null,
+      "desc": "Building Cursor for Physical AI",
+      "category": "AI Agents",
+      "round": "Seed",
+      "amount": 8.5,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZllRU0NHMThhQjBPTVJLUDFKbEQ5OTYwc3JkRjhrV01TLW5UNTdBZFdiM29TSExzUkpDZFRVSG9lMDVmUThBa0d5MHVyVGV0RGU1WWdjLTlLZG1UMkxzb1BvdW83MmxwdldyOERsdlVzZGxkRFhGeUptNjA5ZWROTWtBaDdWenQzbS1rLQ?oc=5"
+    },
+    {
+      "company": "Eigen",
+      "website": null,
+      "desc": "Building the world\u2019s first \u2018mutual friend\u2019",
+      "category": "AI Agents",
+      "round": "Seed",
+      "amount": null,
+      "valuation": null,
+      "investors": [
+        "Benchmark"
+      ],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORFV6TjMzbjRMaVJFX3gzTVhhR1FaTlJHeERSLWpHa2pxRmRzQ1Jkc0sxbjZWeG1NbGFXWVI1eWFXUDQzNW9mTzNtRU9DVThsb2tLNERTakpSYUdiYnhtanFTRHEtSVVHRUctbWlhdDNVU0toTV8ydzZRaVNzRVlkUE45eVktbmd4RUwycXFpVl9XZFBGbmQtdGpteWJLZ0lkVlk2em04UEs?oc=5"
+    },
+    {
+      "company": "Qalzy",
+      "website": null,
+      "desc": "AI nutrition scale that analyzes food for personalized dietary insights",
+      "category": "Vertical AI",
+      "round": "Pre-Seed",
+      "amount": 0.22,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPM2dLUVdGWUhReHZqNnJfbGN5LXlHaDlTRUtLWHluUEktd3NpWWthemxFZWFlNTIwZjZIUWxKbE5sbS1ISEZFc2h2angtejdUYWR6QndDSlNyc1lrWjAyRm04MXQ1UkE5MUV0YTFTR3lDSE9IeU1uZnMtRmk1UHdtcUZRVmlla21xTUdNSFpacldoYUJBU21ycUdfX2x5R3g2a1BKQkk2LXdzNC10V1gwVjJGWDBJcUw1VjlPa0hXYzVwbnRuR2lmWFFxZWd2d0cyaHd1YkFtZkc0a3I3RGQ2UTR3?oc=5"
+    },
+    {
+      "company": "Resolve AI",
+      "website": null,
+      "desc": "Advances production-ready AI systems",
+      "category": "AI Infra",
+      "round": null,
+      "amount": 40,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBlVnZoZ2QyY0VDSGNyd1FkdVRqTEFzOFhLM0FfLXQ3aGxRNkNEeFpVUGFkMVMwaGlGSm1jbjlUWmdKN3VvM2h4c3pTV1ozMzl4ODFPeFJ1c3BuZTVOc0lpemFR0gFiQVVfeXFMUGVWdmhnZDJjRUNIY3J3UWR1VGpMQXM4WEszQV8tdDdobFE2Q0R4WlVQYWQxUzBoaUZKbWNuOVRaZ0o3dW8zaHhzelNXWjMzOXg4MU94UnVzcG5lNU5zSWl6YVE?oc=5"
+    },
+    {
+      "company": "K1x",
+      "website": null,
+      "desc": "AI-powered tax infrastructure platform",
+      "category": "Vertical AI",
+      "round": "Growth",
+      "amount": 175,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9oWnZhVGlBd1lybzlITGxacHdSTGY2THVhNFhnQmpCNnpHbWhvRUlrTnBqRDZISHlDRTBGMThHYjV5OEl2dGtKUjZRczgxdzVtMnJSdi1Pa2pQUFhLZzZBSVRkLWtiaHhF0gFoQVVfeXFMT2hadmFUaUF3WXJvOUhMbFpwd1JMZjZMdWE0WGdCakI2ekdtaG9FSWtOcGpENkhIeUNFMEYxOEdiNXk4SXZ0a0pSNlFzODF3NW0yclJ2LU9ralBQWEtnNkFJVGQta2JoeEU?oc=5"
+    },
+    {
+      "company": "Audrey AI",
+      "website": null,
+      "desc": "AI-powered SaaS platform",
+      "category": "Enterprise AI",
+      "round": "Seed",
+      "amount": 1.8,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBfZWc1MVZjXzN5MXBCQzBTcFdIZTBNOUdjZnpsSTB6LURWaExLZ3hfV0R3M3JOQWVpcmt3S19yRzZjN3I1SWNmVUgwb0FtNGxvb0VlRkpLZXZYM0JLOHdqUml4eU82dHkyb1FlTlZCdV92dG8?oc=5"
+    },
+    {
+      "company": "GetWhys",
+      "website": null,
+      "desc": "Helps companies like Intel and Verizon better understand their customers",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 5.2,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcGJ6SDhVLUR1MERmMV9pUEs5R3FHNXBqcFpFdnV2ak1Qdm42Vk1iX1NrQlBrRV90VnR3QUQxODYyU3M2N1Blc1BZbUhxS2ZqelZTN2N0WTFkZ3JiRmxfSU02dlg2NHNTNDJySmFfM1F0ekNwcC16ZVpoNXN0a1pMNEJSajJMN1gyVDlYTHlnRlc2WUtMWVFiUW9R?oc=5"
+    },
     {
       "company": "Keebler Health",
       "website": null,
@@ -235,6 +359,54 @@
       "investors": [],
       "date": "2026-04-15",
       "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE11QmNWTEhLcE96WTNOOEg4a3pZNE02WDlQcHZxMG1Qa2RZUHZ4M2owdUh2YXRmSGJtTGZhZjF1N09ZbEpVN2xhYkZINV92RnVaQjRyMGtnTFkxd3BFemlXQUJROXF3YV9PQ1JieS1HZw?oc=5"
+    },
+    {
+      "company": "Rebellions",
+      "website": null,
+      "desc": "South Korean AI chip startup",
+      "category": "AI Infra",
+      "round": null,
+      "amount": 400,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOak1FZ2tVSHNfdUd3RnZPczRzeDZSeVRXbHd6Qy1VYUE4UE5Hb1Rvb2RrNmdGNnZuYzFSRG8xVy1KVDRWSWR4QzJLQWZjQl9Mc2xCQVB2MDFtWFRFT09BcU96N0hWdTdvTjM3MTNwQmpKSU1NeUF2dGpUMzBpbjRkNzFnQU44U1VKLWF4dHVsUnJOYVFiX0RiblZtV3BhWXU0eW9lbk12UXF5QTV2YjBHQ0pPcHVVdnpxNFlZNmJKY3V4NGtBOHYwZ2gwSXA?oc=5"
+    },
+    {
+      "company": "LuminX",
+      "website": null,
+      "desc": "AI-powered medical imaging analytics platform",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": null,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPR19WS2Z0d0NWWFJ6eno3OUF6VjF4amx1S2pwS3I2bGM1YmZid19oU0hQVFA4Vk4yZklzTGZXZnBaLTNzUjViRFhHSUJpUUNDdng3R0JJYWtERGNzUHZoeTFLckE3allxQlM0a2x3U0I4a2VHczI5M0FvT0FnZW5qVTNBN0pUM2xELVBMdkZPTFlubExwWVNfLWh2cF9hY1NGSjV2dzI0bUxpZjJEQ1ptMEpQQzB4OXowS3JHWGg5TF9GUW02dEJDNFdPeldoQ3RGMmJjb1RDOUpJWVh0U2Yycm1rS3pGN0hoU1JxRWRqcHpxTV9lVFFCeE1TYVl5Vy1xT2JhYTMwbUZ6R183WHRnUDZJdkRjYlRrX2JXdVRtTGhHd2x1Wi03eXFvSVlXYlU1dGc0TUhkcGRwS2tvc2E3Z1VPdDNCUzFDamJvLTVadGk?oc=5"
+    },
+    {
+      "company": "Phonely",
+      "website": null,
+      "desc": "Voice AI startup",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 16,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUzk1NER3bGZqVVJIU01yZm5rWmI3UHUyd0dYVG1sOVp3M0ZWQ3VxRzFudklCSlA5c0ZrN2d4Njc1WkEwbFpRWTBOSXlVd1p5b2VGV2wtZWNhc1FETVhfeERnSnNBN3lzMDdoRmpXSXNrRWFrRlY4bU01ZGN2TTQzOHJBRjN3cEk5Q05EXzcxcFN6VldGX05Ndk95eld3VkU?oc=5"
+    },
+    {
+      "company": "Cluely",
+      "website": null,
+      "desc": "AI tool that helps users 'cheat' in tests and at work",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 5.3,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxNbkpjb0FFb3FfaEVobWQ3YTBod1FzSGZlT0ZDSEhqMlVMUFZhTk43eGwzSm53SWdTX2E2bG16RFMyRG5qMjVJQ1pRNlg2ajdsem1tMWxXZVlNZ19tMUsxMnh3ejlqR3ZjSnIwZng2VjgyM3haWGRDWHFZQzR1UjMyZlNNWnlFSnduNmxzQlRIWHVZZm9qbDI5SFV6SmFrU0MydlhqR18weklaRGpBaFQzYkdNb3ZINDM2WmN3LUltS1kweUMydDFyeElydTFjMEZwTFVLRHE4UGsxWjlHa1lZMHk0Q2tHMTRtajdJY0JIT2dFaGxXbnlJd0QtVlJIUHJMV0s3M0tlUUQwZWgzaC05WTVtck9PM0luY0RXNHdUNEdXZGl6bTV1M3hWT2VWckg1cFdfdFdodFU3THJWS2Z5Rk9yR2ZWcDdzMVJTdHlOWVNBVnYtb2VlRDV6WDJpSzlFZk5RWmQzZUxHWEJublZtMDk5YVVIQU9RZlNnejBhMjI1RWllbks0aWcwNlI1dw?oc=5"
     },
     {
       "company": "Quantum AI startup",
@@ -525,6 +697,32 @@
       "investors": [],
       "date": "2026-04-10",
       "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5UcE55b2xpeUpUY01vVmthUDZnLUIydHZab1RHTkNqX0FlRTBobmw1WlVwVTBlOHF5b3B3d3lHRjgteWo1d2pOTGc3NU5WWlBpRnA2VFFjZ3JCQVZWekFmM0NRcDcwc0V5ZnR4WHpFUQ?oc=5"
+    },
+    {
+      "company": "01.AI",
+      "website": "01.ai",
+      "desc": "Building next-generation AI models beyond traditional LLMs",
+      "category": "Foundation Models",
+      "round": "Series A",
+      "amount": 290,
+      "valuation": null,
+      "investors": [
+        "Alibaba"
+      ],
+      "date": "2026-04-10",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdWpwTE5mbWtyYi1SdFM2aG50ZGVyT2ZUZHVaT0h2Zko3UWNiNUNKVUFLQ3hqdTBmbGdoRk1zN2FkcDFsZEQyZjZMeWRnczFQZE1nUjNmeWRUX3dxRVFpeko2dkhDUV80emp4dDQ3UzVlLXBxdXZKdmYwLUdnT3ozSzVPSkZzclJLOUV0NHpKcnTSAZYBQVVfeXFMTllpeklJeGZsaGxQWXZITDBuVzdIX3FoaUNyb3lKdVBXUkR6ejBuLTB1VFF5ZXFLeXdxdUJDR05LbkRDWlBRUVRULTkwcHhmVmFnTEVoV1hvWWdTLUJqVWhBX0dvb2hNZGpkVy15V2FLNDYtbWhmY1pSYnhIbzlRMkZrbGduaFJueFZEQWJaTjhmMUlHQ2JR?oc=5"
+    },
+    {
+      "company": "Pixie Chess",
+      "website": null,
+      "desc": "Blockchain-based chess game",
+      "category": "Creative AI",
+      "round": "Seed",
+      "amount": 5.2,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-10",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFpmZWFSTHRQVVdqdXA2aHdBbUw4RDhLdjA5MmVmZi0wNWE5ZzI1QVkzTjhXMjA2aDQycmZObmN6QXo3QXVZR1VXVnFWdmd2NzJhSGlfU2ptSHVSN1dET1hEbnF2TVEtcU81MkxGWnFaX0hqSl9WR2dLQmVYRWhzRXkySjhsLW5SaXlGOVI0RkRYT0s4aTRzckdFMNIBoAFBVV95cUxPdFVpemtQSlo5YUJod1JTY3czYjVKbHRzazJjdjlmbUdFSmN2Yi0xMzBGY1V1LVRSQmJlTzZjRy01SlNIQ3Jfem5EOGU3WEFSVTQyZjR0N3JLMWNhMWlWdkRpcEk1Sm41RUM1V3QtS2xFWko3LXloNDlLbVJrY0RDVmRvWDJEZHNQVFRicFhxZFJpUXNNQlZjLXJFbWhkdG5Z?oc=5"
     },
     {
       "company": "Nava",
