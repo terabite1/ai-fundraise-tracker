@@ -1,7 +1,123 @@
 {
-  "last_updated": "2026-04-16T19:20:55Z",
-  "total_deals": 160,
+  "last_updated": "2026-04-17T19:08:20Z",
+  "total_deals": 173,
   "deals": [
+    {
+      "company": "Loop",
+      "website": null,
+      "desc": "AI platform that predicts supply-chain disruptions",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 95,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQTJyUzZsZlFsYWNIY3ZDV0dKWHVVdk41aFQxXzZGbVZWMzNCZkE3RUxCY2hxbmxkOXQwd3FCaTd6OHY0R0VnLWFBTlhvaEt6WU54M3hqUTRmTXNzYzJEQVI4Vi1DNF93WGtxT2hOTnRVTVh4Tm1obDA5bU5XNm5zLVBVUEtzN1kwZFoyX3hGYWI1eE02NndGeVZGcjhzc0xmMl84?oc=5"
+    },
+    {
+      "company": "InsightFinder AI",
+      "website": null,
+      "desc": "AI-driven incident prediction and root-cause analysis platform",
+      "category": "AI Infra",
+      "round": "Series B",
+      "amount": 15,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WOW5KMkxtT2hRZ1ZWOFJKOFh6WjdFVlNfN3RBUHpfeHQ4NUxGZWYtY0E2dHlaOWV4V21VOXlqYk8wYV9jREtJWHBVcXdkRzFYaUExVlVGX2w3Z0trTGVlN0V4U0Uyd2xfQnpHc2ZGMXhUWV90TGpocg?oc=5"
+    },
+    {
+      "company": "Factory",
+      "website": null,
+      "desc": "AI coding startup",
+      "category": "Developer Tools",
+      "round": null,
+      "amount": 150,
+      "valuation": 1500,
+      "investors": [
+        "Khosla Ventures",
+        "Sequoia Capital"
+      ],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQN0xjREYwNEp4dThycE82TVVBQWFjeUpWQW1hWk5YRmZ5RGkwbjluUHhoY0k4OFQ1RlN2YWFQLWljT21LY1lLZzY0ZzdFejFnaDFNNmR4bVBfbl9mQ2ZyWFV3OEFTOG13d1IzcU9PWTdISXdVQkJodFBXcllDMnNpWHlYVS1hdzJ5Q3c?oc=5"
+    },
+    {
+      "company": "GuruSup",
+      "website": null,
+      "desc": "AI customer service platform",
+      "category": "Enterprise AI",
+      "round": "Seed",
+      "amount": 1.3,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQR09md0VvVWM5akZMcUdEdHN1Q0I4UDRXSDlMUnpPMWJMYklFMnpJUlNyV1R2VVc5R1NUMktfaFpsNGt0NnJLeGtLMWV1el9EdndYNjNtTDdlYWVBZWo4MDJCbE1rXzVSUlNVYVd4ZzRHaHUwdnVmbEI3dW9JalV2UFlKSll5MkdoMDRhLTlGRW5OVEhpVlBzdG9QaUF3Q0l2X1hVOTlJa3JyME9LRHljQ0pRN1dtU2xibS1yeUNqYnE?oc=5"
+    },
+    {
+      "company": "Slash",
+      "website": null,
+      "desc": "FinTech that debuts Twin AI agent",
+      "category": "AI Agents",
+      "round": "Series C",
+      "amount": 100,
+      "valuation": 1000,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSFk0R3lERkFFYTFRSmVfM1lITUp4bWR6eWZEVU04M0NJSXdTOHd4OVJoaFZiaUItYUg1eFA0d2dqODJUR19LMzdaZm5Yei1WS1VLZXVpSXBnOF9QOExoWXNuY2pLdVZxYlhiWU5mOU4xQUVpSmtZVmxybUY5bzJqWVU0cnlYcFV1WHBRQUdmX3lWWnU5aVFyMlZ6M0hmRENFZUpWbHVIblRTRHRCRDg5QTV3Tm4?oc=5"
+    },
+    {
+      "company": "SenseTime",
+      "website": "sensetime.com",
+      "desc": "AI infrastructure and computer vision company expanding AI infrastructure",
+      "category": "AI Infra",
+      "round": null,
+      "amount": 415,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTHc3eFB5dWRvUTU3MmZ5LW5PbGhxRVlwU0FLdmZuNzhyRnJPNG94Ynp2cUNKWmUxcm16czd3OXU5WlBUeFRYS2xFS0VCVW9aX1JaSDlLZDh6MkRqd3hyRmloQ05yX2hBQndDX2RYbmR0ZTZMcjBLR01MZnFpVmtmZ3ZCbGM0eC1XTFQ3SzdFZzNwSVZuUXc?oc=5"
+    },
+    {
+      "company": "Bachatt",
+      "website": null,
+      "desc": "Pakistan-based social-commerce fintech enabling group-buying & micro-payments for mass-market consumers",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 1.7,
+      "valuation": null,
+      "investors": [
+        "Samos Investments",
+        "B&Y Venture Partners",
+        "Unity Capital",
+        "Haatch"
+      ],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPR2pEeVkwNkpSRVBmeDZOYkdOemZGZWttWnFER0UweHl1aXZSZWVQbVpjUDIxemZrczQzeVJhdjN2b25ydEU4SmZZR09fSnh4alBrblBoUXlaMk5ial9iVVJBYmI0Q0hpWDhoQWxUellfaFMwTXZTaXhrcVJROC1NWVVOUHluWjRPWFRybDFqVTlPOEREQnZoRWtXQ25KVm8tMjNuQVpCWG9XWU0wSDhYdlNaRQ?oc=5"
+    },
+    {
+      "company": "Refiant",
+      "website": null,
+      "desc": "Builds efficient AI models",
+      "category": "Foundation Models",
+      "round": "Seed",
+      "amount": 5,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxON2lDR0J4N2VQSUhNOHg5cmZYVjFIWTFuaktua2pUeEhTNXJXSW9mWU9hZWI1ZGc3bEFWREtVald0eTFPWnFDU1dua1NwMDQxVXd6TzI5ZUNtQXhnalFOM2VLT0NIZVRtWTBaemZjaGhUR3lIX29GMHR3Nmpac1p5M3BPVkI?oc=5"
+    },
+    {
+      "company": "Joyful Health",
+      "website": null,
+      "desc": "SaaS platform for health-related services",
+      "category": "Vertical AI",
+      "round": "Series A",
+      "amount": 17,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WRldQX016YXN1WGNfZ3lxUHpCTEY5c0tjQkJtT2Y2YUJxMWhDM0xBTVdUMzAwSzluNXhxQUhkR3pERG9NcXNoWko2XzhsR0p6NW92NmNSclVVYmxTOEt5V2d4Y0pOa0hqc2ltVTV0RUJnOTM3?oc=5"
+    },
     {
       "company": "Spektr",
       "website": null,
@@ -125,6 +241,42 @@
       "investors": [],
       "date": "2026-04-16",
       "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcGJ6SDhVLUR1MERmMV9pUEs5R3FHNXBqcFpFdnV2ak1Qdm42Vk1iX1NrQlBrRV90VnR3QUQxODYyU3M2N1Blc1BZbUhxS2ZqelZTN2N0WTFkZ3JiRmxfSU02dlg2NHNTNDJySmFfM1F0ekNwcC16ZVpoNXN0a1pMNEJSajJMN1gyVDlYTHlnRlc2WUtMWVFiUW9R?oc=5"
+    },
+    {
+      "company": "Solidroad",
+      "website": null,
+      "desc": "Automates customer support quality assurance with AI",
+      "category": "Vertical AI",
+      "round": "Series A",
+      "amount": 25,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTThodmZOLTV1emt5TkFEbXNlbWJ1TUc4b2JDRUNEbEUtUWp2T2U3em5XVmVnYW8ydy1lMDFWS2J5aDlxbVNLQXJ4YmM0U29LUFUwOGZQT1gyTDg5MEVZSXloWW9BTW1DRmdyTmZvLVlhQlFtdzJhbklBaWFtUVZXdkQzeUsxN3M?oc=5"
+    },
+    {
+      "company": "Upscale AI",
+      "website": null,
+      "desc": "AI-driven customer engagement and sales automation platform",
+      "category": "Enterprise AI",
+      "round": "Series C",
+      "amount": 190,
+      "valuation": 2000,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE03RGQtblZmYURHMk1LNGFsYndXZkNuZjRMTnFPTWo4M0c1X3ZTSzJJZkJWZ3JMYVI1bWNmTHlhMnhpVG1lZWFuazVkLWVjZmhSZkozdg?oc=5"
+    },
+    {
+      "company": "TARS",
+      "website": null,
+      "desc": "Chinese AI robotics startup",
+      "category": "Robotics",
+      "round": "Pre-A",
+      "amount": 455,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQM1hZOWNsbEp3Y2ItU05Pc2d4b0JaRExFZGFhZ1FwTUU5SmxvUWlzR1FHTGc1SS05TkNia1lHSXJ0N2Q0TXg3MENBc2hGbTRseElBVW44OFZUbGtxdjByS0laUGkydV82bTBvWnA2cWVCdlNoVUxFOUdFU2RpajE5eEJFekJROHl2VG9KVFg5T1Q1Y0tCRDNXTGdOdHR0Mkh0OV9WSjJuWW5tYzBPSHFXUnYzYkp1MDBnXzZPNl9hSV8tZVE1X1NN?oc=5"
     },
     {
       "company": "Keebler Health",
@@ -611,6 +763,18 @@
       ],
       "date": "2026-04-13",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPc3BYQnJiSU9PNmRKaU8wYTBHVnAyTzJkOFgwS0JWdG5TcDdFMkR6VS1hMGVnM191aElVczB0c2dfOTRfNzBMMjExd3lvMERqeVBQemtVX3NmYmtlT1lLWEJyTGZDSFdReVUxSHRZUjZ0TmZYa2ZTMjcyWGl4QkJIMTBlemZpeXljNy1yZzNuUTNlWDdadE1ITDdkeFJQQQ?oc=5"
+    },
+    {
+      "company": "Eleos Life",
+      "website": null,
+      "desc": "Life-insurance provider",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 3,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-13",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZGpPMF93Vk5RXzZLenY4XzdoNDAtcEM1cU95eDZxd1N4bVBDcHY0d0xIVmxUZWtpZGtiRWV4NlJWaFVCZ3d5RzIwZTgwTkdUX2o5dldNQXE0T0pDazc5N25DSG1pbGgwaW9GMTNjMV9TY1B5YWN6UWthX250R0ZQOWZLZ1RDUQ?oc=5"
     },
     {
       "company": "Alibaba",
