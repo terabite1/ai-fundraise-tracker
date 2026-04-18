@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-17T19:08:20Z",
-  "total_deals": 173,
+  "last_updated": "2026-04-18T07:15:07Z",
+  "total_deals": 178,
   "deals": [
     {
       "company": "Loop",
@@ -117,6 +117,30 @@
       "investors": [],
       "date": "2026-04-17",
       "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WRldQX016YXN1WGNfZ3lxUHpCTEY5c0tjQkJtT2Y2YUJxMWhDM0xBTVdUMzAwSzluNXhxQUhkR3pERG9NcXNoWko2XzhsR0p6NW92NmNSclVVYmxTOEt5V2d4Y0pOa0hqc2ltVTV0RUJnOTM3?oc=5"
+    },
+    {
+      "company": "Beeline Medicines",
+      "website": null,
+      "desc": "AI-driven precision medicine platform",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 300,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNbTctYm9NMWVWZ3U4Vk9OVzAzZU9ma2phUU9FWE84M3NqQTdXaDJCRldoaTZlTkR0SHJ3T3llb0ZQTVU5UVAtZ0w2SzhXU1VpRWdZSXNmdjFrdDJXQmdPSXlyNElKd1JVZUxTaDRhOWRDTlMzd2g5MGsyRGVyUzRZMmRzTmxnVFl0NmpqTHdqSkZUQ1JGSmVXOHJocmlIZEFRcXBjMEZlRXlDMlVtQk5rR3FhYnpDMjRXaHZ1T2NpQXpQclhVTE1kS1V6TFJWdzVUbHVaYThR?oc=5"
+    },
+    {
+      "company": "Tempe estate planning startup",
+      "website": null,
+      "desc": "AI-driven estate planning platform",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 65,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcHd4TTR3Q1VoUGRPZ1lTM1BqeTdrUVQtcWNBR0xoSTI0MS1lMWpsOXlCYTROZnRQa01ZRERrbVhVOFg2aUliYlc5bl90QkNCdUJnZDl0enJ5VzY0d1VvVGM1aVYwQ1k3ZGRYN291WXNFdWlndlBhUzc2QVBINlNTRXdmUmlFVDh5YlZjVUtWbmF6dk9HQlBjak9vZ08yR290VC0zQURnYw?oc=5"
     },
     {
       "company": "Spektr",
@@ -277,6 +301,30 @@
       "investors": [],
       "date": "2026-04-16",
       "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQM1hZOWNsbEp3Y2ItU05Pc2d4b0JaRExFZGFhZ1FwTUU5SmxvUWlzR1FHTGc1SS05TkNia1lHSXJ0N2Q0TXg3MENBc2hGbTRseElBVW44OFZUbGtxdjByS0laUGkydV82bTBvWnA2cWVCdlNoVUxFOUdFU2RpajE5eEJFekJROHl2VG9KVFg5T1Q1Y0tCRDNXTGdOdHR0Mkh0OV9WSjJuWW5tYzBPSHFXUnYzYkp1MDBnXzZPNl9hSV8tZVE1X1NN?oc=5"
+    },
+    {
+      "company": "Worki",
+      "website": null,
+      "desc": "AI workforce unifying infrastructure layer for healthcare workforce operations",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 2.75,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOU3ZDYU1Rbm02a1NzR3lsbkFTZUFjYnVrSTZaa0czVG9YRVZ3aFY0d0dxQmRRR05Yd0RiRFptQ040YnVVQ0ZKQ2lIcTMxZ2hSY1NocENHY2x4MmVIZ2ptNzR1T201a3pMWUp0dUNhNmhxZElQdm4yRXpVQlhQQjZaNlJKYmVXWVB2OWR5MEtZUlBYNE9NdkQtV3dPaWlORDAwUGd4aGRGWFY3VGpPZWxCTWR6T1gxMnlya3hYdlJmdEtVYUdPaWpNT2ZPQWY3M29jajZ0VUVUMmVXMDU4SW1XME54LWRidzlYT2U5THhudDl4SUxBWVVvTHBJenl0eUtxOTBj?oc=5"
+    },
+    {
+      "company": "Sennos",
+      "website": null,
+      "desc": "AI-driven fermentation technology platform",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 20,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNnVkZUN2WW1qcEhvMnZwc0FMRHhINFNSSjI0ZVh1aGZsbkRuOXltRktQdFRtTTRwSy05YTMwYkZCS0JNdEk2UmNfcS1na3I2Vnl1dmpjemVrQktuSVQ3aThhbXF4ZDV6LXlwdmFEWUtLYS1qc1pVNEZtWElkVGlBamFrTU9CdWZzQ1dpS3hyR3Y4TkVGQ0RQa3BFLTJyZVd0SXc?oc=5"
     },
     {
       "company": "Keebler Health",
@@ -775,6 +823,18 @@
       "investors": [],
       "date": "2026-04-13",
       "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZGpPMF93Vk5RXzZLenY4XzdoNDAtcEM1cU95eDZxd1N4bVBDcHY0d0xIVmxUZWtpZGtiRWV4NlJWaFVCZ3d5RzIwZTgwTkdUX2o5dldNQXE0T0pDazc5N25DSG1pbGgwaW9GMTNjMV9TY1B5YWN6UWthX250R0ZQOWZLZ1RDUQ?oc=5"
+    },
+    {
+      "company": "Prompt Security",
+      "website": null,
+      "desc": "AI-powered security platform protecting enterprises from generative-AI risks",
+      "category": "Enterprise AI",
+      "round": "Series A",
+      "amount": 18,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-12",
+      "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE45V0thRW9zMG1xVVYwVG4zSWdzNGh2dmdYZzZVSkduZU1xY3NFenhKSFZSTUNVMjVpbEU5bWVvT1NQU20yaDRub0x0TS1HSS1fUmJHSGEzR2tKeHJhOVdR?oc=5"
     },
     {
       "company": "Alibaba",
