@@ -1,7 +1,21 @@
 {
-  "last_updated": "2026-04-18T07:15:07Z",
-  "total_deals": 178,
+  "last_updated": "2026-04-18T18:55:51Z",
+  "total_deals": 182,
   "deals": [
+    {
+      "company": "Cursor",
+      "website": null,
+      "desc": "AI coding assistant that helps developers write and edit code",
+      "category": "Developer Tools",
+      "round": "Series B",
+      "amount": 2000,
+      "valuation": 2000,
+      "investors": [
+        "Nvidia"
+      ],
+      "date": "2026-04-18",
+      "source_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPeG40V1dfZ1E2ODhFQkpyTnk2aHZzcVFucG9tdG1NRVE3NG95UnUxQ25ZbWRfSExKcDE2T3RZSkRDbmJnLVczRU0xektXZ0ZLc2tVcHBGcjVDQjdFSDdwUlR2Y0RqSVYxMkU3ckI2VHJseG1kaE9Xc0lQanhJTm9jRFBQTDZERlA5X2loclR3Zk9RRm9JbjJsSHhPQ0ttTlpacHJGQ0ROVkpDWkZJX2RvZ1RxNFJnWnRiRUIzaFdZQUVTM1ZicUpPOVVjZGlMdVNza3ZBbmRmYlcwNXJQLUw3bXloOFlWckh6LTdXdG9XM0tyejFMMFQxeVZhWlVmcHBCSXFR?oc=5"
+    },
     {
       "company": "Loop",
       "website": null,
@@ -327,6 +341,18 @@
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNnVkZUN2WW1qcEhvMnZwc0FMRHhINFNSSjI0ZVh1aGZsbkRuOXltRktQdFRtTTRwSy05YTMwYkZCS0JNdEk2UmNfcS1na3I2Vnl1dmpjemVrQktuSVQ3aThhbXF4ZDV6LXlwdmFEWUtLYS1qc1pVNEZtWElkVGlBamFrTU9CdWZzQ1dpS3hyR3Y4TkVGQ0RQa3BFLTJyZVd0SXc?oc=5"
     },
     {
+      "company": "Safe Superintelligence",
+      "website": null,
+      "desc": "Developing safe artificial general intelligence systems",
+      "category": "Foundation Models",
+      "round": "Series A",
+      "amount": 3000,
+      "valuation": 30000,
+      "investors": null,
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41cElaYTItWHhFdkpiM18yR2gyUjQ4MEtXN3JkREx3T2lGQ1FoV2g3XzNVRXUwLTVzeWlJYzh4N0tKT0xmNjBBMzFmclMyeVloa2xweFp3TndtZU9tbXdualpMcHVGRnJB?oc=5"
+    },
+    {
       "company": "Keebler Health",
       "website": null,
       "desc": "AI-powered risk adjustment platform for healthcare",
@@ -607,6 +633,34 @@
       "investors": [],
       "date": "2026-04-15",
       "source_url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxNbkpjb0FFb3FfaEVobWQ3YTBod1FzSGZlT0ZDSEhqMlVMUFZhTk43eGwzSm53SWdTX2E2bG16RFMyRG5qMjVJQ1pRNlg2ajdsem1tMWxXZVlNZ19tMUsxMnh3ejlqR3ZjSnIwZng2VjgyM3haWGRDWHFZQzR1UjMyZlNNWnlFSnduNmxzQlRIWHVZZm9qbDI5SFV6SmFrU0MydlhqR18weklaRGpBaFQzYkdNb3ZINDM2WmN3LUltS1kweUMydDFyeElydTFjMEZwTFVLRHE4UGsxWjlHa1lZMHk0Q2tHMTRtajdJY0JIT2dFaGxXbnlJd0QtVlJIUHJMV0s3M0tlUUQwZWgzaC05WTVtck9PM0luY0RXNHdUNEdXZGl6bTV1M3hWT2VWckg1cFdfdFdodFU3THJWS2Z5Rk9yR2ZWcDdzMVJTdHlOWVNBVnYtb2VlRDV6WDJpSzlFZk5RWmQzZUxHWEJublZtMDk5YVVIQU9RZlNnejBhMjI1RWllbks0aWcwNlI1dw?oc=5"
+    },
+    {
+      "company": "Hubbl Technologies",
+      "website": null,
+      "desc": "Data infrastructure and analytics platform for high-performance computing workloads",
+      "category": "Data Infra",
+      "round": "Series A",
+      "amount": 6,
+      "valuation": null,
+      "investors": [
+        "Salesforce Ventures"
+      ],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeGloaWNWQ0o2SlF1YzI1Qks5M2xQMndhZWpCSHhfdEw0SndpbU5ORElTVHMtc2trajdKNXBJc2NVTzBoUGVQOFp3WDJxMG1rQUJJVTlja1NBWDJlOXVBcWVrTUctZUYzbGJlM2VuNmdTSU1ibUZ4TTh2T1FUa18zTnU0djNWcUkySFNKdXliUl9fNHFLVVNmYjlBMDhOam9zTmdvVV9sZUZ5Q0lMdzJ1ZVN1LUU?oc=5"
+    },
+    {
+      "company": "Auctor",
+      "website": null,
+      "desc": null,
+      "category": null,
+      "round": "Series A",
+      "amount": 20,
+      "valuation": null,
+      "investors": [
+        "Sequoia"
+      ],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYTRKUEQ5THlzdWZUcTNZek1KaHF6LVVSTWFQTU41b1BDSXdVbnIyTkdoT1U0UGdmcmd5dFk0X0xaMW92WkE0bVFrRFY4TllNZ3h5RV9nZFpSUXJmcDZvN2FkUnNGTDVoaGxYN1dvcEpwVkQ4WU5pYzRIbFZ6Y1FhOUVvd0VfOThmaTNHTF9yeERSTW9iZ3pzbWR4TQ?oc=5"
     },
     {
       "company": "Quantum AI startup",
