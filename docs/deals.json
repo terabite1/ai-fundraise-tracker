@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-19T07:26:37Z",
-  "total_deals": 183,
+  "last_updated": "2026-04-19T18:55:12Z",
+  "total_deals": 184,
   "deals": [
     {
       "company": "Cursor",
@@ -351,6 +351,20 @@
       "investors": null,
       "date": "2026-04-16",
       "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41cElaYTItWHhFdkpiM18yR2gyUjQ4MEtXN3JkREx3T2lGQ1FoV2g3XzNVRXUwLTVzeWlJYzh4N0tKT0xmNjBBMzFmclMyeVloa2xweFp3TndtZU9tbXdualpMcHVGRnJB?oc=5"
+    },
+    {
+      "company": "Rebound Technologies",
+      "website": null,
+      "desc": "Thermal energy storage systems for commercial refrigeration",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 2,
+      "valuation": null,
+      "investors": [
+        "KCC Manufacturing"
+      ],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZk93eTJQR2tHOFVVWG9fMkZqeDloWFdYRUlWMk81UXAwbTJXYWgwRkZtN1d3Y21zZ3VzRUZTUmc0RXZBZHJOTDN6dEk0N2VGSFZqZUFHQV9GWjluck9vR0tobkVBdUg1dnEzVmhhYUNZblFUc1dlcmVJLUtELVJzb0VkSHZEN0hhVjRTdjBrbHZDd3hWZ0hyRlVQbGd4QURNd3h1TEVHem5fRDVoNDM1aEpFSWVIYVdOdUJhVWxoUUs1WkoyWXhBSGZOY2FsWmhNLThuN2Z0SllrLXBOaFE?oc=5"
     },
     {
       "company": "Keebler Health",
