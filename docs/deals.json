@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-18T18:55:51Z",
-  "total_deals": 182,
+  "last_updated": "2026-04-19T07:26:37Z",
+  "total_deals": 183,
   "deals": [
     {
       "company": "Cursor",
@@ -815,6 +815,18 @@
       "investors": [],
       "date": "2026-04-14",
       "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9Yc3BadE9RaEtYbXlQTERFdE1XOS1xWTJmYmJyLWJySUJWNGVFNUc2LWhGVmhOME83WTVDVDdnUGJ0QVFkYnNUdVdzN0RnLUJMNURpN1pSM0IxUlpVaVpHZmJ4R0xmLUZVbExlT1VlU0djZjRvWi1NZQ?oc=5"
+    },
+    {
+      "company": "Quantinuum",
+      "website": null,
+      "desc": "Quantum AI startup based in Ann Arbor",
+      "category": "AI Infra",
+      "round": "Series C",
+      "amount": 139,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-14",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNeFp5WFVZVUVkNmxJWkRROUpfWGt4N283OGVJZHRrVUdrZWQ2RVM1dVRCX05HdkZZdk0xZUdaeGFjZFNNX1BkTXZCcW5ad3pjdjF1TXFsS3I5ZTBYaW1FRDVzajhadzlfdUg3MTVWckZ2WGc1cEY2cVdlcXUtdGZGZWRJQmhGb1gwemNDY3hYVVVOUQ?oc=5"
     },
     {
       "company": "Round",
