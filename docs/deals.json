@@ -1,7 +1,106 @@
 {
-  "last_updated": "2026-04-19T18:55:12Z",
-  "total_deals": 184,
+  "last_updated": "2026-04-20T19:13:54Z",
+  "total_deals": 197,
   "deals": [
+    {
+      "company": "ViewsML",
+      "website": null,
+      "desc": "AI-based virtual tissue staining for clinical labs",
+      "category": "Vertical AI",
+      "round": null,
+      "amount": 4.9,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-20",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVUZUajd3MU0wNllPTERXaXpQZk5qbGg5Ul9FOUdwTTZtN2FKV05KYVFtNnljUklkcG1RTlBINVFtOVBmM0pmeW1EVXpXMzgzZDZTbnREaGNBQkZ1OWdrRGFTZnczakQ5eEhoWGx1MFNvdkd3NXkxZUVCRmQzT0x4NkNraE9GQnlRbl95WFh6RlRja2ZDUUk5dWdB?oc=5"
+    },
+    {
+      "company": "Coral",
+      "website": null,
+      "desc": "Healthcare automation platform",
+      "category": "Vertical AI",
+      "round": "Series A",
+      "amount": 12.5,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-20",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTGJwRlVTbGZOaVFQanQ0U1lSaUhtSEt4Z3VKZG10N0h1d0pjREhWc2dSV09CbDlEdVlWeVJKMnI2TzdiVGdTdjAtdlFCMFpkcG5FeElzQ2xjbnJDQkxwYXMzZXNGUlFZUkJHVGQ0ZVNwT1NTeTJMMjNiaEZkNkpSLW9MQ2R5Y2Uxc1J4RHlBRVRxUmhOemxWempqc3EyQQ?oc=5"
+    },
+    {
+      "company": "Creao AI",
+      "website": null,
+      "desc": "AI-powered creative content generation platform",
+      "category": "Creative AI",
+      "round": null,
+      "amount": 10,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-20",
+      "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0zQmluWXZEM0tVZHZpZjdTYUFxeW1LTnBDM3R3Z3V0alM5SlBMenZSdi1GcWF2MHE2Q1FQYWJjMjBQTDFZN2xKS0F3WWR0enFiTjM1eS03dWtXMmRyZVE?oc=5"
+    },
+    {
+      "company": "X Square Robot",
+      "website": null,
+      "desc": "Embodied AI robotics startup",
+      "category": "Robotics",
+      "round": "Series B",
+      "amount": 276,
+      "valuation": null,
+      "investors": [
+        "Xiaomi",
+        "Sequoia China"
+      ],
+      "date": "2026-04-20",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaV9UdS1KQWVnRTZpa2p2ekh6RWFBNVI5UV8tSm4zcDJ2S2hTbWNyNnh3TG80YkVKOHVzbk9rbWFRdWFqZW5DYXFzMHB4U2NPdmY3WGpTSzMwTlZZTklaWFdzRG01YUdnLWI2a0p4UVFZVkd1V3FBb2ZYeWMzeWtUenJQakcyQkJrNUtTTW5kdnhiRnFnY0NUMkU3R2NHSTdGSDI1YjdveUJINFpMWTViUmJJOFgwU2wtQUxj?oc=5"
+    },
+    {
+      "company": "Ethermed",
+      "website": null,
+      "desc": "SaaS platform for healthcare billing and payments automation",
+      "category": "Vertical AI",
+      "round": "Series A",
+      "amount": 8.5,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-20",
+      "source_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1DWXM5OXk5WkFjUG5MeUF2R3IzWkM5WE1xVFVZa0swZlNqeUxzcU5CNlZVTXYzaWdxZS1FRk40N2gxT1BwdHVkM201eW9lckxiNE1rRjB6U1JyYVA1WC1jcUp3TThuM2NaYWxjRmp5aTJIbU9uZnBuNQ?oc=5"
+    },
+    {
+      "company": "Lua",
+      "website": null,
+      "desc": "SaaS platform for secure messaging and workflow automation in healthcare",
+      "category": "Vertical AI",
+      "round": "Series A",
+      "amount": 5.8,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-20",
+      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1KY3A0bGt1Y1lsNlVUU2NGRnVBVk1zOWxBRlo4ZVdJN25VWnN5alp0TUFOeWVObmJfMmQ1UlFyM3VPM0FqM3ZfM3V6c0RiRXNxcnlXb3Aza0U1Yzhza2FBMjN3ZEZBQlNEN091UUhIM2thQ0hX?oc=5"
+    },
+    {
+      "company": "INVIA",
+      "website": null,
+      "desc": "SaaS platform (details not provided)",
+      "category": "Enterprise AI",
+      "round": "Seed",
+      "amount": 1.2,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-20",
+      "source_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1BTnBRYkpGcWZpRFFwWGxQZ3N5MEoxSVB6SDRFZ0VfRWpzcFBrZGRKTFdEWWdieU5FWXFxdTNyaVhNVHI4bW5ndnF3ZkJ6LWNSNmtSYXAyRWNKOXdEVkFaV0FsSksyNlhha3hnV1JfcnNZUmx0R0lZ?oc=5"
+    },
+    {
+      "company": "Proteins.1",
+      "website": null,
+      "desc": "Single-molecule analysis platform for early disease detection",
+      "category": "Vertical AI",
+      "round": "Pre-Seed",
+      "amount": 5,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-20",
+      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZzlTa2VMbVJGX1g5X3JhSlhEVFl0b0hJYURmOFhCQWZYRFdBUzRoMHB5U2JhTVdobHU1ZEFYamJHblRrZmFiTmduTmJTaUlfY05sRjNxZ25QVV9hV2J6VTdnOXRsSkFLVzlfZThkQ2ROUTdoNUZJdENNYm1aUzBoQnl1SXdaVGxyOWtISTB3S25EYTB6Mzg3WVV1X1VJRnBnQ1JyMWpSZ1BwVTlnejdmaUhETTNDb0tHOWlWcDNoUWIxSTM0RVRnUDdkajAwdw?oc=5"
+    },
     {
       "company": "Cursor",
       "website": null,
@@ -155,6 +254,18 @@
       "investors": [],
       "date": "2026-04-17",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcHd4TTR3Q1VoUGRPZ1lTM1BqeTdrUVQtcWNBR0xoSTI0MS1lMWpsOXlCYTROZnRQa01ZRERrbVhVOFg2aUliYlc5bl90QkNCdUJnZDl0enJ5VzY0d1VvVGM1aVYwQ1k3ZGRYN291WXNFdWlndlBhUzc2QVBINlNTRXdmUmlFVDh5YlZjVUtWbmF6dk9HQlBjak9vZ08yR290VC0zQURnYw?oc=5"
+    },
+    {
+      "company": "Recursive Superintelligence",
+      "website": null,
+      "desc": "Self-teaching AI systems",
+      "category": "Foundation Models",
+      "round": null,
+      "amount": 500,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRkEwMlBacDRqNWx6bmFMSFV6cnl5TnI4d3JtNUNGZTZPb0E0a3ROc19lMktEcFFrdEtZZ1BEemRmVl9sRlNIZmFXSDBZTGFjVTlTU0JaSE1VNF81WkdnbU4zQmd3Nmk0WVBwbWJTTm41YV8tQlpjQVNvVTFTWUdGc29VQnU?oc=5"
     },
     {
       "company": "Spektr",
@@ -365,6 +476,18 @@
       ],
       "date": "2026-04-16",
       "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZk93eTJQR2tHOFVVWG9fMkZqeDloWFdYRUlWMk81UXAwbTJXYWgwRkZtN1d3Y21zZ3VzRUZTUmc0RXZBZHJOTDN6dEk0N2VGSFZqZUFHQV9GWjluck9vR0tobkVBdUg1dnEzVmhhYUNZblFUc1dlcmVJLUtELVJzb0VkSHZEN0hhVjRTdjBrbHZDd3hWZ0hyRlVQbGd4QURNd3h1TEVHem5fRDVoNDM1aEpFSWVIYVdOdUJhVWxoUUs1WkoyWXhBSGZOY2FsWmhNLThuN2Z0SllrLXBOaFE?oc=5"
+    },
+    {
+      "company": "STORM Therapeutics",
+      "website": null,
+      "desc": "Harnesses RNA modification to treat cancer",
+      "category": "Vertical AI",
+      "round": "Series C",
+      "amount": 50,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-16",
+      "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNU1ZiR3lwbmI1NjNzbGhINHI0QVctYU9kVkttakpYekNWSmZKMVZXSG9ZNklnYXN0b1VZQXdiNEJ1Qnc2enRpaTEtbXZoaElvVWVYOWpWNkhXZ1d3c1QtekpYelFoQURIVXN0RzRPcXdDakQ5QUVFQUI2WnNDd292aTBROTlud3I2Ul9FTktOd096bkhLa1B0a1VmNUdmc3lXQlVSR2g5MHM1b1BaeVFSNGxONTZQT0hCRnROdXpKRFluUVVqWm9yUEFfakQ1OTBpblVTa1RxMUJDdw?oc=5"
     },
     {
       "company": "Keebler Health",
@@ -675,6 +798,46 @@
       ],
       "date": "2026-04-15",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYTRKUEQ5THlzdWZUcTNZek1KaHF6LVVSTWFQTU41b1BDSXdVbnIyTkdoT1U0UGdmcmd5dFk0X0xaMW92WkE0bVFrRFY4TllNZ3h5RV9nZFpSUXJmcDZvN2FkUnNGTDVoaGxYN1dvcEpwVkQ4WU5pYzRIbFZ6Y1FhOUVvd0VfOThmaTNHTF9yeERSTW9iZ3pzbWR4TQ?oc=5"
+    },
+    {
+      "company": "Accel",
+      "website": null,
+      "desc": "Global venture capital firm closing a $5 billion fund focused on AI startups",
+      "category": "AI Infra",
+      "round": "Series Fund",
+      "amount": 5000,
+      "valuation": null,
+      "investors": [
+        "Accel"
+      ],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQ3pYNXBjdHpoMDQtczd4SkJnWFdXM3Q5N0tpTXJCaGxZQURfSFRvamtGQTd6Mmd2N2phS0YwQVFKc1B5NWV1b0lOa1d1VVFybjZ6aE5JU2F2dkxRQllyc2hOV1lYYy1ELVh3Uk1xMkszY3BuRjZwd1U1SE9VeXpBZ3BISWFyckR2MlphdQ?oc=5"
+    },
+    {
+      "company": "Skild AI",
+      "website": null,
+      "desc": "Building a general-purpose AI brain for robotics",
+      "category": "Robotics",
+      "round": null,
+      "amount": null,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQX2RQaEY0OFZZalpvdzRPR3lIa0RUaW5ISjIzb3ItVHhIUW1LRVBNaE9Zc1ZqSnZBblAyeWxCSUtqaDB4YTlja0FueXNMUHhkZGRoVHVSWnBfc3Z3WExSWjJYRFFzQTZxMXVTM0t0TDYxTWRCSnVTTnlocjBWcGx0NQ?oc=5"
+    },
+    {
+      "company": "AI call receptionist",
+      "website": null,
+      "desc": "Y Combinator-backed AI call receptionist",
+      "category": "AI Agents",
+      "round": "Series A",
+      "amount": 22,
+      "valuation": null,
+      "investors": [
+        "Y Combinator"
+      ],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTnVvbXg5LXRFZk02azVxTTR2Q2w3bGc2dld4NDlPYXJ2WVo1UlJ5UzA4bno2Zy1iNXBKNlhtR0czNXZWQm45YW1Fc0wzaHZ4UHBoblpCNC1iNHVIZlRkbHZ2VFE0RXpYSk12NjR6WWNaU3J3bHNnMEJtMS1HbE9CZUxCVHF6Q09CTjhaWmkyYlNQak5LMmFxN0dhdnUxX09rdmxWUGl2eEIyUkd6RTg5Rw?oc=5"
     },
     {
       "company": "Quantum AI startup",
