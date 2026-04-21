@@ -1,7 +1,81 @@
 {
-  "last_updated": "2026-04-20T19:13:54Z",
-  "total_deals": 197,
+  "last_updated": "2026-04-21T07:58:24Z",
+  "total_deals": 205,
   "deals": [
+    {
+      "company": "Bezos AI Lab",
+      "website": null,
+      "desc": "AI research lab funded by Jeff Bezos",
+      "category": "Foundation Models",
+      "round": "Series A",
+      "amount": 10000,
+      "valuation": null,
+      "investors": [
+        "Jeff Bezos"
+      ],
+      "date": "2026-04-21",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSEpKRmgyNndEb1pWbEF2Qm5fc0NucnBoQzRYNl9kMlBJNVdtNFZlT3YzdlBTdUpxWEdzcHBjN0dPbW5KY1FYd0JsdklGbFd3dlZKMTRMWENRcnRTTWdJYV93eW11a3JIdk1vVVNMLTJvRTd0eldjYVpUbWszNEgwaG9GMU93U2liNGlNLU1sYmNvWTJrbmxMZDJUd09Tc2MxZldraE9tODU5ZzZYWHFNcQ?oc=5"
+    },
+    {
+      "company": "VisioLab",
+      "website": null,
+      "desc": "AI-powered self-checkout technology for retail",
+      "category": "Vertical AI",
+      "round": "Series A",
+      "amount": 11,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-21",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOcU5nUFZVZFRoN0w1bzNOc3dqbVVwdnZmME1GMFhsNGgtVXNOWDJVMHkzWDhzTlRNaXJzeUVRS2ZEU25CcThkbkY2dDNkRmRXYWZJSHJjRkp1Znh5c2R1eENvNHZ0dHlINHdYay1qT3ZvY3FYUzBFMWlFQW5qbEowNlo4QjRNaGZJZVBEMEY3WUZSYWluX3c?oc=5"
+    },
+    {
+      "company": "Smart Robotics",
+      "website": null,
+      "desc": "AI robotic picking solutions for warehouses",
+      "category": "Robotics",
+      "round": "Series A",
+      "amount": 11,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-21",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONEpaaHlwNktRU1F0ektoMk50V0ZZRS1Zd3p2U3pQT0ZGMUpRMENabnBsY2tTb3l0NHlpUEI0c1AyTTBFZnBMYzNLTExEakhWc0l6LTEyTXpvNkczSFg5dWJkWVFwOS14REpPYlVzWjB1S0R0QXlPWmpRNXR2TUE4U3JaaEVhbTVwX0ZfUWR1TTBNOGlFcU96QVNTSHN0UjkwQklMU1RoMmU?oc=5"
+    },
+    {
+      "company": "Zynt",
+      "website": null,
+      "desc": "Polish AI startup",
+      "category": "AI Infra",
+      "round": "Pre-Seed",
+      "amount": 0.5,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-21",
+      "source_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBna2ZWaFE4WXpqNEFnTTBvZllnd0V6SXU1WjNzNS12bDBHbC1JV0NYZ2lWT0swLVdQYS1wQmZvR09WdW9iQWVyVGNjSEJ5ajJ6MFZnVVFyemlOQQ?oc=5"
+    },
+    {
+      "company": "OrangeQS",
+      "website": null,
+      "desc": "Quantum chip testing equipment and services",
+      "category": "AI Infra",
+      "round": "Seed",
+      "amount": 16.2,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-21",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZkxBUWNZZFRjMU9Bc3ZnRV9neFYtNXVDR1dXbGo1bUhVdlZEdVZRUTM1VFpfUWxZbmpEc29OTkMyWmJTV0JVd1ZwRlc5dXFJbUZoSmhVakxpR2ZTc2hYTkRMU2pDdV9ram16NmZuMUgtajR2UUhpSjNLY2lqOGltVm94RkYwMWQyQUhyME82M2Uyc1RRN3hXZFFEZ2dCd3FCTFlMWHBLWDRvVG02SEtsOWxXNW10blU?oc=5"
+    },
+    {
+      "company": "Ideally",
+      "website": null,
+      "desc": "Customer insights and feedback platform",
+      "category": "Enterprise AI",
+      "round": "Series A",
+      "amount": 8.7,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-21",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTWd2ZU1Wcl9LWk5wX3JqUkJ3RElCbGhYT2RKWUNrai1nMzE3a0cyR3hfS2E3d19rblpTc0o0Y0Nnb0Z6MHcyR0lHbzBJQ2EyTk5sSElNMk91cUNnVzhaa3RZemtMaGNEbzdKU0d6alRRemQ5b194WEEtZ2F1YXp4Z0luN1lValVaVlBEdHVFenlWbEFRd2MyQWN4VFRwUQ?oc=5"
+    },
     {
       "company": "ViewsML",
       "website": null,
@@ -266,6 +340,18 @@
       "investors": [],
       "date": "2026-04-17",
       "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRkEwMlBacDRqNWx6bmFMSFV6cnl5TnI4d3JtNUNGZTZPb0E0a3ROc19lMktEcFFrdEtZZ1BEemRmVl9sRlNIZmFXSDBZTGFjVTlTU0JaSE1VNF81WkdnbU4zQmd3Nmk0WVBwbWJTTm41YV8tQlpjQVNvVTFTWUdGc29VQnU?oc=5"
+    },
+    {
+      "company": "AlixLabs",
+      "website": null,
+      "desc": "Swedish semiconductor startup developing atomic-level etching technology",
+      "category": "AI Infra",
+      "round": "Series A",
+      "amount": 16,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-17",
+      "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZTg1V1g4UHk4WUV3SmtGY0JuV0tNa3JsWlhzLThrLTR4UUVqWkwxcWlSa0djdGotNW83OHR4Nzk5aC03d0NiXzNLc0xoNVFQay1HWmJwdjBjODhvLWQ5UnQ2VXhmU0xGdjZzR3k0UFRfR3FqS056OUxLRGwtZzRnU1lkTER5blhxLWF6YnRUc0JWNkE0RXZHcWNJcnlrWFFNWEd0dVpYal93eE5kNUY3QmtJRjhkTFJGdm5iU0JJeFdLSlpmeUp2OHpGR01tcXYtUVhSVE5EckgzS2VV?oc=5"
     },
     {
       "company": "Spektr",
@@ -838,6 +924,18 @@
       ],
       "date": "2026-04-15",
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTnVvbXg5LXRFZk02azVxTTR2Q2w3bGc2dld4NDlPYXJ2WVo1UlJ5UzA4bno2Zy1iNXBKNlhtR0czNXZWQm45YW1Fc0wzaHZ4UHBoblpCNC1iNHVIZlRkbHZ2VFE0RXpYSk12NjR6WWNaU3J3bHNnMEJtMS1HbE9CZUxCVHF6Q09CTjhaWmkyYlNQak5LMmFxN0dhdnUxX09rdmxWUGl2eEIyUkd6RTg5Rw?oc=5"
+    },
+    {
+      "company": "Modern Relay",
+      "website": null,
+      "desc": "SaaS platform for modern logistics and delivery operations",
+      "category": "Vertical AI",
+      "round": "Seed",
+      "amount": 3,
+      "valuation": null,
+      "investors": [],
+      "date": "2026-04-15",
+      "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5DSVBCTGJzSE5JNmFsdTdjQ2dmUlZnY3Vzd29YQ2U3NG93QTB5NmFkS2k2N3hKMkNQekI2M3NSRXFPcGxzTFczaS1HdGpPSW5DRUZwSHVPb3pnWTNHME56YUNkODJLZFlxdTFick85VzlIaUlq?oc=5"
     },
     {
       "company": "Quantum AI startup",
